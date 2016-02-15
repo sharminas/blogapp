@@ -1,0 +1,547 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-02-04 12:59+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Controller/ArticlesController.php:39;63;80
+msgid "Invalid article"
+msgstr "Artigo Inválido"
+
+#: Controller/CategoriesController.php:29;51;72
+msgid "Invalid category"
+msgstr "Categoria inválida"
+
+#: Controller/CommentsController.php:20;44;64
+msgid "Invalid comment"
+msgstr "Comentário de inválido"
+
+#: Controller/CommentsController.php:48
+msgid "The comment has been saved."
+msgstr "O comentário foi salvo."
+
+#: Controller/CommentsController.php:51
+msgid "The comment could not be saved. Please, try again."
+msgstr "O comentário não pode ser guardada. Por favor, tente novamente."
+
+#: Controller/CommentsController.php:68
+msgid "The comment has been deleted."
+msgstr "O comentário foi excluído."
+
+#: Controller/CommentsController.php:70
+msgid "The comment could not be deleted. Please, try again."
+msgstr "O comentário não pode ser excluído. Por favor, tente novamente."
+
+#: Controller/UsersController.php:136;143;179;196;388;396
+msgid "This User is not existing"
+msgstr "Este usuário não existe"
+
+#: Plugin/like/View/Helper/likeHelper.php:48 View/Helper/LikeHelper.php:50
+msgid "and"
+msgstr ""
+
+#: Plugin/like/View/Helper/likeHelper.php:46 View/Helper/LikeHelper.php:48
+msgid "%s people"
+msgid_plural "%s people"
+msgstr[0] ""
+msgstr[1] ""
+
+#: View/Articles/add.ctp:19 View/Categories/index.ctp:18
+#: View/Categories/view.ctp:18 View/Users/edit.ctp:18
+#: View/Users/profile.ctp:18 View/Users/users_article.ctp:18
+#: View/Users/users_category.ctp:18 View/Users/view.ctp:18
+msgid "My Profile"
+msgstr "O meu perfil"
+
+#: View/Articles/add.ctp:21 View/Users/profile.ctp:20
+msgid "Change Password"
+msgstr "Alterar a senha"
+
+#: View/Articles/add.ctp:23 View/Users/profile.ctp:23;31
+msgid "My Articles"
+msgstr "Meus artigos"
+
+#: View/Articles/add.ctp:25 View/Users/profile.ctp:26
+msgid "My Genre"
+msgstr "O meu género"
+
+#: View/Articles/add.ctp:26
+msgid "Modify Article"
+msgstr "Modificar o artigo"
+
+#: View/Articles/add.ctp:27 View/Articles/edit.ctp:7 View/Categories/add.ctp:7
+msgid "category_id"
+msgstr ""
+
+#: View/Articles/add.ctp:31
+msgid "status"
+msgstr ""
+
+#: View/Articles/add.ctp:38 View/Layouts/default.ctp:56
+msgid "Add Article"
+msgstr "Adicionar o artigo"
+
+#: View/Articles/add.ctp:40 View/Categories/add.ctp:19
+msgid "title"
+msgstr ""
+
+#: View/Articles/add.ctp:41
+msgid "body"
+msgstr ""
+
+#: View/Articles/edit.ctp:3
+msgid "Edit Article"
+msgstr "Editar artigo"
+
+#: View/Articles/filter_article.ctp:11 View/Articles/index.ctp:10
+#: View/Articles/view.ctp:8 View/Categories/index.ctp:35
+#: View/Categories/view.ctp:36 View/Users/users_article.ctp:37
+#: View/Users/users_category.ctp:37
+msgid ""
+"<span class=\"glyphicon glyphicon-pencil\" style=\"font-size: 18px; color:"
+"black;\"> </span>"
+msgstr ""
+
+#: View/Articles/filter_article.ctp:13 View/Articles/index.ctp:12
+#: View/Articles/view.ctp:10 View/Categories/index.ctp:38
+#: View/Categories/view.ctp:38 View/Users/users_article.ctp:39
+#: View/Users/users_category.ctp:39
+msgid ""
+"<span class=\"glyphicon glyphicon-trash\" style=\"font-size: 18px; color:red;"
+"\"> </span>"
+msgstr ""
+
+#: View/Articles/filter_article.ctp:13 View/Articles/index.ctp:12
+#: View/Articles/view.ctp:10
+msgid "Are you sure you want to delete this article?"
+msgstr "Tem certeza de que deseja excluir este artigo?"
+
+#: View/Articles/filter_article.ctp:25
+msgid "Read More ..."
+msgstr "Ler mais ..."
+
+#: View/Articles/filter_article.ctp:30
+msgid ""
+"<span class=\"glyphicon glyphicon-comment\" style=\"\n"
+"              font-size:22px; color:black;\"> </span>"
+msgstr ""
+
+#: View/Articles/index.ctp:22
+msgid "span"
+msgstr ""
+
+#: View/Articles/index.ctp:24 View/Users/users_article.ctp:51
+#: View/Users/users_category.ctp:49
+msgid "Continue Reading..."
+msgstr "Continue lendo..."
+
+#: View/Articles/index.ctp:28
+msgid "No Articles Found"
+msgstr "Não há artigos encontrados"
+
+#: View/Articles/index.ctp:30
+msgid "Older Post>>"
+msgstr "Post mais antigo>>"
+
+#: View/Articles/search.ctp:9
+msgid ""
+"<span class=\"glyphicon glyphicon-search\" style=\"font-size:24px;color:"
+"#ff471a; float:right;\"> </span>"
+msgstr ""
+
+#: View/Articles/view.ctp:25
+msgid ""
+"<span class=\"glyphicon glyphicon-comment\" style=\"\n"
+"                font-size:22px; color:black;\"> </span>"
+msgstr ""
+
+#: View/Categories/add.ctp:3 View/Categories/edit.ctp:3
+#: View/Layouts/default.ctp:58
+msgid "Add Category"
+msgstr "Adicionar categoria"
+
+#: View/Categories/add.ctp:21
+msgid "description"
+msgstr ""
+
+#: View/Categories/index.ctp:38 View/Categories/view.ctp:38
+#: View/Users/users_article.ctp:39 View/Users/users_category.ctp:39
+msgid "Are you sure you want to delete this User?"
+msgstr "Tem certeza de que deseja excluir este usuário?"
+
+#: View/Comments/add.ctp:6
+msgid "Add Comment"
+msgstr "Adicionar comentário"
+
+#: View/Comments/edit.ctp:4
+msgid "Edit Comment"
+msgstr "Editar comentário"
+
+#: View/Comments/edit.ctp:13
+msgid "Submit"
+msgstr ""
+
+#: View/Comments/edit.ctp:16 View/Users/index.ctp:16
+msgid "Actions"
+msgstr ""
+
+#: View/Comments/edit.ctp:19 View/Users/index.ctp:36
+msgid "Delete"
+msgstr ""
+
+#: View/Comments/edit.ctp:19
+msgid "Are you sure you want to delete # %s?"
+msgstr "Tem certeza de que deseja excluir # %s?"
+
+#: View/Comments/edit.ctp:20
+msgid "List Comments"
+msgstr ""
+
+#: View/Comments/edit.ctp:21
+msgid "List Articles"
+msgstr ""
+
+#: View/Comments/edit.ctp:22
+msgid "New Article"
+msgstr ""
+
+#: View/Comments/edit.ctp:23
+msgid "List Users"
+msgstr ""
+
+#: View/Comments/edit.ctp:24
+msgid "New User"
+msgstr ""
+
+#: View/Elements/footer_element.ctp:8
+msgid "About the Blog"
+msgstr "Sobre o Blog"
+
+#: View/Elements/footer_element.ctp:10;18;26
+msgid ""
+"A blog (a truncation of the expression weblog)[1] is a discussion or "
+"informational site published on the World Wide Web consisting of discrete "
+"entries (\"posts\") typically displayed in reverse chronological order (the "
+"most recent post appears first)."
+msgstr ""
+"Um blog (um truncamento de expressão weblog)[1] é uma discussão ou site "
+"informativo publicado na World Wide Web composto de entradas discretas "
+"(&quot;lugares&quot;) geralmente exibidas em ordem cronológica inversa (o "
+"post mais recente aparece primeiro)."
+
+#: View/Elements/footer_element.ctp:16
+msgid "Recent Articles"
+msgstr "Artigos Recentes"
+
+#: View/Elements/footer_element.ctp:24
+msgid "Random Articles"
+msgstr "Artigos aleatórios"
+
+#: View/Elements/side_bar.ctp:2 View/Elements/side_bar_search.ctp:2
+#: View/Elements/side_bar_search_2.ctp:2
+msgid "Archives"
+msgstr "Arquivos"
+
+#: View/Elements/side_bar.ctp:4 View/Elements/side_bar_search.ctp:4
+#: View/Elements/side_bar_search_2.ctp:4
+msgid "March 2016"
+msgstr "De março de 2016"
+
+#: View/Elements/side_bar.ctp:6 View/Elements/side_bar_search.ctp:6
+#: View/Elements/side_bar_search_2.ctp:6
+msgid "February 2016"
+msgstr "De fevereiro de 2016"
+
+#: View/Elements/side_bar.ctp:8 View/Elements/side_bar_search.ctp:8
+#: View/Elements/side_bar_search_2.ctp:8
+msgid "January 2016"
+msgstr "De janeiro de 2016"
+
+#: View/Elements/side_bar.ctp:10 View/Elements/side_bar_search.ctp:10
+#: View/Elements/side_bar_search_2.ctp:10
+msgid "December 2016"
+msgstr "De dezembro de 2016"
+
+#: View/Elements/side_bar.ctp:14 View/Elements/side_bar_search.ctp:15
+msgid "Category"
+msgstr "Categoria"
+
+#: View/Elements/side_bar.ctp:16 View/Elements/side_bar_search.ctp:17
+#: View/Elements/side_bar_search_2.ctp:17 View/Layouts/default.ctp:86
+msgid "Technology"
+msgstr "Tecnologia"
+
+#: View/Elements/side_bar.ctp:17 View/Elements/side_bar_search.ctp:18
+#: View/Elements/side_bar_search_2.ctp:18 View/Layouts/default.ctp:87
+msgid "Science and Health"
+msgstr "Ciência e Saúde"
+
+#: View/Elements/side_bar.ctp:18 View/Elements/side_bar_search.ctp:19
+#: View/Elements/side_bar_search_2.ctp:19 View/Layouts/default.ctp:88
+msgid "Random Post"
+msgstr "Random Post"
+
+#: View/Elements/side_bar.ctp:22 View/Elements/side_bar_search.ctp:23
+msgid "Popular Articles"
+msgstr "Artigos populares"
+
+#: View/Elements/side_bar_search.ctp:33 View/Elements/side_bar_search_2.ctp:35
+msgid "Article Comments"
+msgstr "Artigo Observações"
+
+#: View/Emails/text/account_verification.ctp:3
+msgid "Hello %s,"
+msgstr ""
+
+#: View/Layouts/default.ctp:39
+msgid "<span class=\"fa fa-facebook-official\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:40
+msgid "<span class=\"fa fa-google-plus\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:42
+msgid "<span class=\"fa fa-pinterest\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:43
+msgid "<span class=\"fa fa-tumblr\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:44
+msgid "<span class=\"fa fa-youtube\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:45
+msgid "<span class=\"fa fa-twitter\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:49
+msgid ""
+"<span class=\"glyphicon glyphicon-search\" style=\"font-size:22px;\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:59
+msgid "Profile"
+msgstr "Perfil"
+
+#: View/Layouts/default.ctp:61
+msgid "Logout"
+msgstr "saída de um aplicativo, "
+
+#: View/Layouts/default.ctp:61
+msgid "Are you sure you want to logout?"
+msgstr "Tem certeza de que deseja efetuar logout?"
+
+#: View/Layouts/default.ctp:65
+msgid ""
+"<span class=\"glyphicon glyphicon-user\" style=\"font-size: 18px;\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:66
+msgid ""
+"<span class=\"glyphicon glyphicon-edit\" style=\"font-size: 18px;\"> </span>"
+msgstr ""
+
+#: View/Layouts/default.ctp:80
+msgid "Home"
+msgstr "A bordo "
+
+#: View/Layouts/default.ctp:93
+msgid "About"
+msgstr " Com respeito a"
+
+#: View/Layouts/default.ctp:94
+msgid "Contact"
+msgstr "Comunicação"
+
+#: View/Layouts/default.ctp:106
+msgid "Back to Top"
+msgstr "Voltar ao Topo"
+
+#: View/Users/index.ctp:2 View/Users/request_password_change.ctp:13
+#: View/Users/view.ctp:31
+msgid "User"
+msgstr ""
+
+#: View/Users/index.ctp:31
+msgid "Add"
+msgstr ""
+
+#: View/Users/index.ctp:32
+msgid "View"
+msgstr ""
+
+#: View/Users/index.ctp:34
+msgid "Edit"
+msgstr ""
+
+#: View/Users/index.ctp:37
+msgid "Are you sure you want to delete id number %s?"
+msgstr "Tem certeza de que deseja excluir o número id %s?"
+
+#: View/Users/index.ctp:45
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Users/index.ctp:48
+msgid "previous"
+msgstr ""
+
+#: View/Users/index.ctp:50
+msgid "next"
+msgstr ""
+
+#: View/Users/login.ctp:6 View/Users/request_password_change.ctp:17
+msgid "email"
+msgstr ""
+
+#: View/Users/login.ctp:9
+msgid "Forgot password"
+msgstr "Contraseña olvidada"
+
+#: View/Users/login.ctp:12
+msgid "password"
+msgstr ""
+
+#: View/Users/login.ctp:14
+msgid "auto_login"
+msgstr ""
+
+#: View/Users/profile.ctp:36;65
+msgid "Id"
+msgstr ""
+
+#: View/Users/profile.ctp:37;66
+msgid "Title"
+msgstr ""
+
+#: View/Users/profile.ctp:38
+msgid "Status"
+msgstr ""
+
+#: View/Users/profile.ctp:39
+msgid "Genre"
+msgstr ""
+
+#: View/Users/profile.ctp:40;68 View/Users/view.ctp:43
+msgid "Created"
+msgstr ""
+
+#: View/Users/profile.ctp:41;69 View/Users/view.ctp:46
+msgid "Modified"
+msgstr ""
+
+#: View/Users/profile.ctp:60
+msgid "My Category"
+msgstr "A Minha Categoria"
+
+#: View/Users/profile.ctp:67
+msgid "Description"
+msgstr ""
+
+#: View/Users/resend_verification.ctp:7
+msgid "Resend the Email Verification"
+msgstr "Reenviar el email de verificación"
+
+#: View/Users/resend_verification.ctp:8
+msgid ""
+"Please enter the email you used for registration and you'll get an email "
+"with further instructions."
+msgstr ""
+"Por favor introduza o endereço de correio electrónico utilizado para registo "
+"e você'll obter um email com mais instruções."
+
+#: View/Users/view.ctp:35
+msgid "Firstname"
+msgstr ""
+
+#: View/Users/view.ctp:37
+msgid "Lastname"
+msgstr ""
+
+#: View/Users/view.ctp:39
+msgid "Address"
+msgstr ""
+
+#: View/Users/view.ctp:41
+msgid "Gender"
+msgstr ""
+
+#: Model/Article.php:validation for field title
+msgid "give it a try"
+msgstr "Experimentar"
+
+#: Model/Article.php:validation for field body
+msgid "Tell what is your title all about, Dont leave it blank."
+msgstr "Diga qual é o seu título de todos sobre, não deixe em branco."
+
+#: Model/ArticleI18n.php:validation for field locale;validation
+#: model;validation Model/Comment.php:validation id
+msgid "notBlank"
+msgstr ""
+
+#: Model/ArticleI18n.php:validation for field foreign_key
+#: Model/Category.php:validation user_id
+msgid "numeric"
+msgstr ""
+
+#: Model/Category.php:validation for field title
+msgid "Please dont leave it blank."
+msgstr "Por favor não deixe em branco."
+
+#: Model/Category.php:validation for field description
+msgid "Provide description for the category."
+msgstr "Forneça uma descrição para a categoria."
+
+#: Model/Comment.php:validation for field name
+msgid "Please provide any/your name ."
+msgstr "Forneça qualquer/seu nome"
+
+#: Model/Comment.php:validation for field email
+msgid "Provide your email for your comment."
+msgstr "Provide your email for your comment."
+
+#: Model/User.php:validation for field email;validation email2
+msgid "This field cannot be  left blank"
+msgstr "Este campo não pode ser deixado em branco"
+
+#: Model/User.php:validation for field email;validation email2
+msgid "This is not a valid email"
+msgstr "Este não é um endereço de correio electrónico válido"
+
+#: Model/User.php:validation for field email
+msgid "The email is already taken."
+msgstr "O email é já tomadas."
+
+#: Model/User.php:validation for field email2
+msgid "Email address is not match, Try again"
+msgstr "Endereço de e-mail não é corresponder, tente novamente"
+
+#: Model/User.php:validation for field password;validation password2
+msgid "This field cannot be left blank"
+msgstr "Este campo não pode ser deixado em branco"
+
+#: Model/User.php:validation for field password;validation password2
+msgid "Your password must be between 8 and 20 characters."
+msgstr "Sua senha deve ter entre 8 e 20 caracteres."
+
+#: Model/User.php:validation for field password2
+msgid "The passwords you entered do not match."
+msgstr "As senhas digitadas não coincidem."
+
+#: Model/User.php:validation for field firstname;validation lastname
+msgid "This field cannot be left blank."
+msgstr "Este campo não pode ser deixado em branco."

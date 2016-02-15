@@ -1,0 +1,371 @@
+/** CSS code **/
+body{
+	background-color: white;
+	margin-top: 45px;
+	font-family: "Arial", sans-serif;
+	border: none;
+}
+p .body{
+	font-family: "Arial", sans-serif;
+}
+/*layout*/
+.adjust{
+	margin-top: -.75cm;
+}
+.foot{
+	font-family: "Arial", sans-serif;
+    color:#F92672;
+    text-transform: uppercase;
+	font-size: 16px;
+	font-style: normal;
+}
+.selection{
+	background-color:black; 
+	color: white; 
+	border:none; 
+	font-size: 20px;
+	padding: none;
+	
+}
+.side{
+	margin-top: -.25cm;
+}
+.sidebar{ 
+    font-family: "Arial", sans-serif;
+    color:#F92672;
+    text-transform: capitalize;
+	font-size: 12px;
+	font-style: normal;
+}
+.sidebar h4{
+	border-bottom: 1px solid #ddd;	
+	padding: 5px 10px;
+}
+.sidebar ul{
+	padding: 5px 10px;
+}
+.text {
+	width: 230px;
+	border: 1px solid #F92672;
+	border-left: 4px solid #F92672;
+}
+/*fonts*/
+h2{	
+	font-family:Times New Roman;
+	color: #F92672;
+	font-size: 30px;	
+}
+h2 .author{
+	font-size: 12px;	
+}
+h4{
+	font-family:Lucida Sans Unicode;
+	font-size: 18px;
+	text-align: center;
+}
+.head3 {
+    font-family:Lucida Sans Unicode;
+	font-size: 18px;
+}
+h5{
+    font-size: 18px;
+}
+.style{
+    font-family:Courier New;
+    letter-spacing:  1px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.jumbotron-up{
+	margin-top: -1.5cm;
+}
+.title{
+	text-align:center;
+	color: #F92672;
+	 font-family:Times New Roman;
+	font-size: 70px;
+}
+.p{
+	text-align:left;
+	font-family:Lucida Sans Unicode;
+	font-size: 24px;
+}
+
+/*flash message*/
+.exit{
+    font-size:18px; 
+    background-color: #eccecf;
+    border:none; float:right; 
+    color:red;
+}
+.error { 
+	color:black;
+	border-left:2px solid #9e0b0f;
+	padding:10px;
+    margin-left: .7cm;
+    margin-right: .7cm;
+	font-weight:bold;
+}
+.error2 { 
+	background: #eccecf;
+	color:black;
+	border:2px solid #9e0b0f;
+	padding:10px;
+	font-weight:bold;
+}
+.error3 { 
+	margin-top: -3%;
+	background: #eccecf;
+	color:black;
+	border:2px solid #9e0b0f;
+	padding:10px;
+	font-weight:bold;
+}
+.modal1 {
+    font-size:22px; 
+    color:blue; 
+    background-color: white; 
+    border:none;
+}
+.success { 
+	background: #FFFACD; 
+	color: black;
+	border:2px solid #bedf5d; 
+	padding:10px; 
+	font-weight:bold;
+	margin-top: 1cm;
+}
+/*tooltip layout*/
+.heading  {
+    color: black;
+    background-color: white;
+}
+.toolcss {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:5px;
+	color:#fff;
+	font-size:12px;
+    font-family: Arial;
+}
+/*nav menu and links*/
+.conti a:link {
+	text-decoration: none;
+	font-size: 12px;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #F92672;
+}
+.conti a:visited {
+    color: #F92672;
+}
+.conti a:hover {
+	border: none;
+    color: black;
+}
+.conti .active {
+    color: #F92672;
+}
+/*heading*/
+.head a:link {
+	font-family:Lucida Sans Unicode;
+	text-transform: capitalize;
+    color: #F92672;
+}
+.head a:visited {
+    color: #F92672;
+}
+.head a:hover {
+    color: #F92672;
+}
+.head .active {
+    color: #F92672;
+}
+/*Navigation Bar*/
+.menu a:link {
+	margin-left: .5cm;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #F92672;
+}
+.menu a:visited {
+    color: #F92672;
+}
+.menu a:hover {
+	border: none;
+    color: #F92672;
+}
+.menu .active {
+    color: #F92672;
+}
+/*Title and NAme*/
+.topic a:link {
+	text-decoration: none;
+	font-family:Arial;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #F92672;
+}
+.topic a:visited {
+    color: #F92672;
+}
+.topic a:hover {
+	border: none;
+    color: black;
+}
+.topic .active {
+    color: #F92672;
+}
+
+/*paginate*/
+.paginate a:link {
+	text-decoration: none;
+	font-size: 12px;
+	color: #ff471a;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #F92672;
+}
+.paginate a:visited {
+    color: #F92672;
+}
+.paginate a:hover {
+	border: none;
+    color: #ff471a;
+}
+.paginate .active {
+    color: #F92672;
+}
+/*FD971F*/
+/*sidebar*/
+.side a:link {
+	text-decoration: none;
+	font-size: 14px;
+	font-family:Arial;
+    letter-spacing: 2px;
+	text-transform: capitalize;
+    color: black;
+}
+.side a:visited {
+    color: black;
+}
+.side a:hover {
+	border: none;
+    color: #ff471a;
+}
+.side .active {
+    color: black;
+}
+/*.profile */
+.profile a:link {
+	text-decoration: none;
+	font-size: 14px;
+	font-family:Arial;
+    letter-spacing: 2px;
+	text-transform: capitalize;
+    color: #ff471a;
+}
+.profile a:visited {
+    color: #ff471a;
+}
+.profile a:hover {
+	border: none;
+    color: black;
+}
+.profile .active {
+    color: #ff471a;
+}
+
+/*socialmedia*/
+.media a:link {
+	text-decoration: none;
+	font-size: 12px;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: capitalize;
+    color: #F92672;
+}
+.media a:visited {
+    color: #F92672;
+}
+.media a:hover {
+	border: none;
+    color: black;
+}
+.media .active {
+    color: #F92672;
+}
+/*pagination*/
+.paginate a:link {
+	text-decoration: none;
+	font-size: 16px;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: capitalize;
+    color: #F92672;
+}
+.paginate a:visited {
+    color: #F92672;
+}
+.paginate a:hover {
+	border: none;
+    color: #F92672;
+}
+.paginate .active {
+    color: #F92672;
+}
+/*footer*/
+.paginate a:link {
+	text-decoration: none;
+	font-size: 16px;
+	font-family:Georgia;
+    letter-spacing: 2px;
+	text-transform: capitalize;
+    color: #F92672;
+}
+.footer a:visited {
+    color: #F92672;
+}
+.footer a:hover {
+	border: none;
+	text-decoration: none;
+    color: #F92672;
+}
+.footer .active {
+    color: #F92672;
+}
+/*social media*/
+.fb { 
+	font-size: 20px;
+	border: none;
+	/*background-color: blue;*/	
+}
+.gmail { 
+	font-size: 20px;
+	/*background-color: red;	*/	
+}
+.twitter { 
+	font-size: 20px;
+	/*background-color: #00BFFF;	*/	
+}
+.yt { 
+	font-size: 20px;
+	/*background-color: red;	*/	
+}
+.tmblr { 
+	font-size: 20px;	
+	/*background-color: #00CED1;	*/
+}
+.pin { 
+	font-size: 20px;	
+    /*background-color: #FF1493;	*/
+}
+/*sidebar options*/
+
+
