@@ -69,7 +69,4 @@ class Article extends AppModel {
     public function isOwnedBy($article, $user) {
 	    return $this->field('id', array('id' => $article, 'user_id' => $user)) !== false;
 	}
-	 // public function beforeFilter(){
-  //        Configure::write('Config.language', 'por');
-  //    }
 }

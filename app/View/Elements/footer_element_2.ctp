@@ -2,6 +2,15 @@
   <div class="container">
       <div class="row">
         <div class="col-md-12">
+            <ul class="navbar-nav navbar-right">
+                  <li></li>
+                  <li class="fb media"><?php  echo $this->Html->link(__('<span class="fa fa-facebook-official"> </span>'),'https://github.com/sharminas/blogapp',array('escape' => false));?></li>
+                  <li class="gmail media"><?php echo $this->Html->link(__('<span class="fa fa-google-plus"> </span>'), 'https://github.com/sharminas/blogapp', array('escape' => false));?></li>
+                  <li class="gthub media"><?php echo $this->Html->link(__('<span class=" fa fa-github-square"> </span>'), 'https://github.com/sharminas/blogapp', array('escape' => false));?></li>
+                  <li class="pin media"><?php echo $this->Html->link(__('<span class="fa fa-pinterest"> </span>'),"https://github.com/sharminas/blogapp",array('escape' => false));?> </li>
+                  <li class="redit media"><?php echo $this->Html->link(__('<span class="fa fa-reddit"> </span>'),"https://github.com/sharminas/blogapp",array('escape' => false));?></li>
+                  <li class="twitter media"><?php echo $this->Html->link(__('<span class="fa fa-twitter"> </span>'),"https://github.com/sharminas/blogapp",array('escape' => false));?></li>
+            </ul>
             <h4 style="color: gray; font-style: 20px; text-align:left;">BlogApp<hr style="color: gray;"></h4>
         </div>  
         <div class="col-md-3">

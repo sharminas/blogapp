@@ -1,3 +1,12 @@
+/*fonts*/
+@font-face {
+     font-family: jackFrost;
+     src: url('JackFrost.otf'); 
+}
+@font-face {
+     font-family: Assassin$;
+     src: url('localhost/blogapp/app/webroot/fonts/Assassin$.ttf'); 
+}
 /** CSS code **/
 body{
 	background-color: white;
@@ -5,16 +14,19 @@ body{
 	font-family: "Arial", sans-serif;
 	border: none;
 }
-p .body{
-	font-family: "Arial", sans-serif;
-}
 /*layout*/
+.headTop {
+    margin-top: -.4cm;
+}
+.blogtop {
+	padding-top: 5px;
+}
 .adjust{
-	margin-top: -.75cm;
+	margin-top: -.009cm;
 }
 .foot{
-	font-family: "Arial", sans-serif;
-    color:#F92672;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: gray;
     text-transform: uppercase;
 	font-size: 16px;
 	font-style: normal;
@@ -25,13 +37,9 @@ p .body{
 	border:none; 
 	font-size: 20px;
 	padding: none;
-	
-}
-.side{
-	margin-top: -.25cm;
 }
 .sidebar{ 
-    font-family: "Arial", sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color:#F92672;
     text-transform: capitalize;
 	font-size: 12px;
@@ -49,14 +57,20 @@ p .body{
 	border: 1px solid #F92672;
 	border-left: 4px solid #F92672;
 }
+.sideMedia{
+	margin-right: 6cm;
+	margin-left: -.40cm;
+	margin-top: 1cm;
+}
 /*fonts*/
 h2{	
 	font-family:Times New Roman;
 	color: #F92672;
 	font-size: 30px;	
 }
-h2 .author{
-	font-size: 12px;	
+.author{
+	font-size: 12px;
+	color: black;	
 }
 h4{
 	font-family:Lucida Sans Unicode;
@@ -71,26 +85,27 @@ h5{
     font-size: 18px;
 }
 .style{
-    font-family:Courier New;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     letter-spacing:  1px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
+    background-color:#F5F5F5;
+    color: black;
 }
 .jumbotron-up{
 	margin-top: -1.5cm;
 }
 .title{
 	text-align:center;
-	color: #F92672;
-	 font-family:Times New Roman;
+	color: #00BFFF;
+	font-family:jackFrost;
 	font-size: 70px;
 }
-.p{
+.p {
 	text-align:left;
 	font-family:Lucida Sans Unicode;
 	font-size: 24px;
 }
-
 /*flash message*/
 .exit{
     font-size:18px; 
@@ -121,12 +136,6 @@ h5{
 	padding:10px;
 	font-weight:bold;
 }
-.modal1 {
-    font-size:22px; 
-    color:blue; 
-    background-color: white; 
-    border:none;
-}
 .success { 
 	background: #FFFACD; 
 	color: black;
@@ -155,111 +164,113 @@ h5{
 .conti a:link {
 	text-decoration: none;
 	font-size: 12px;
-	font-family:Georgia;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     letter-spacing: 2px;
 	text-transform: uppercase;
-    color: #F92672;
+    color: #00BFFF;;
 }
 .conti a:visited {
-    color: #F92672;
+    color: #00BFFF
 }
 .conti a:hover {
 	border: none;
     color: black;
 }
 .conti .active {
-    color: #F92672;
+     color: #00BFFF;
 }
 /*heading*/
 .head a:link {
 	font-family:Lucida Sans Unicode;
 	text-transform: capitalize;
-    color: #F92672;
+     color: #00BFFF;
 }
 .head a:visited {
-    color: #F92672;
+    color: #00BFFF;
 }
 .head a:hover {
-    color: #F92672;
+    color: #00BFFF;
 }
 .head .active {
-    color: #F92672;
+    color: #00BFFF;
 }
 /*Navigation Bar*/
 .menu a:link {
 	margin-left: .5cm;
-	font-family:Georgia;
+	font-size: 18px;
+    font-family:  Jack Frost;
     letter-spacing: 2px;
 	text-transform: uppercase;
-    color: #F92672;
+    color: #00BFFF;
 }
 .menu a:visited {
-    color: #F92672;
+    color: #00BFFF;
 }
 .menu a:hover {
 	border: none;
-    color: #F92672;
+    color: #F92672; 
 }
-.menu .active {
-    color: #F92672;
+.menu :active {
+    color: black;
 }
 /*Title and NAme*/
 .topic a:link {
 	text-decoration: none;
-	font-family:Arial;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     letter-spacing: 2px;
-	text-transform: uppercase;
-    color: #F92672;
+	text-transform: capitalize;
+    color: #353839;
 }
 .topic a:visited {
-    color: #F92672;
+    color: #353839;
+
 }
 .topic a:hover {
 	border: none;
-    color: black;
+     color: #00BFFF;
 }
 .topic .active {
-    color: #F92672;
+    color: #00BFFF;
 }
 
 /*paginate*/
 .paginate a:link {
 	text-decoration: none;
 	font-size: 12px;
-	color: #ff471a;
 	font-family:Georgia;
     letter-spacing: 2px;
 	text-transform: uppercase;
-    color: #F92672;
+    color: gray;
 }
 .paginate a:visited {
-    color: #F92672;
+    color: #00BFFF;
 }
 .paginate a:hover {
 	border: none;
-    color: #ff471a;
+	text-decoration: none;
+    color: #00BFFF;;
 }
-.paginate .active {
-    color: #F92672;
+.paginate a:active {
+    color: #00BFFF;
 }
 /*FD971F*/
 /*sidebar*/
-.side a:link {
+.sideli :link {
 	text-decoration: none;
 	font-size: 14px;
-	font-family:Arial;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     letter-spacing: 2px;
 	text-transform: capitalize;
     color: black;
 }
-.side a:visited {
+.sideli :visited {
     color: black;
 }
-.side a:hover {
+.sideli :hover {
 	border: none;
-    color: #ff471a;
+    color: #00BFFF;
 }
-.side .active {
+.sideli :active {
     color: black;
 }
 /*.profile */
@@ -269,102 +280,116 @@ h5{
 	font-family:Arial;
     letter-spacing: 2px;
 	text-transform: capitalize;
-    color: #ff471a;
+    color: #00BFFF;
 }
 .profile a:visited {
-    color: #ff471a;
+    color: #00BFFF;
 }
 .profile a:hover {
 	border: none;
     color: black;
 }
 .profile .active {
-    color: #ff471a;
+    color: #00BFFF;
 }
 
 /*socialmedia*/
 .media a:link {
 	text-decoration: none;
-	font-size: 12px;
-	font-family:Georgia;
-    letter-spacing: 2px;
-	text-transform: capitalize;
-    color: #F92672;
+	letter-spacing: 12px;
+    color: gray;
 }
 .media a:visited {
-    color: #F92672;
+    color: gray;
 }
 .media a:hover {
 	border: none;
-    color: black;
+    color: gray;
 }
 .media .active {
-    color: #F92672;
-}
-/*pagination*/
-.paginate a:link {
-	text-decoration: none;
-	font-size: 16px;
-	font-family:Georgia;
-    letter-spacing: 2px;
-	text-transform: capitalize;
-    color: #F92672;
-}
-.paginate a:visited {
-    color: #F92672;
-}
-.paginate a:hover {
-	border: none;
-    color: #F92672;
-}
-.paginate .active {
-    color: #F92672;
+   color: gray;
 }
 /*footer*/
-.paginate a:link {
+a.footer:link {
 	text-decoration: none;
 	font-size: 16px;
-	font-family:Georgia;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     letter-spacing: 2px;
 	text-transform: capitalize;
-    color: #F92672;
+    color: gray;
 }
 .footer a:visited {
-    color: #F92672;
+    color: gray;
 }
 .footer a:hover {
 	border: none;
 	text-decoration: none;
-    color: #F92672;
+    color: white;
 }
-.footer .active {
-    color: #F92672;
+.footer a:active {
+    color: gray;
 }
 /*social media*/
-.fb { 
-	font-size: 20px;
-	border: none;
-	/*background-color: blue;*/	
+.fb a:hover { 
+	text-decoration: none;
+	font-size: 22px;
+	border: none;	
+	color: #1E90FF;
 }
-.gmail { 
-	font-size: 20px;
-	/*background-color: red;	*/	
+.gmail a:hover { 
+	text-decoration: none;
+	font-size: 22px;
+     color: red;		
+}
+.twitter a:hover{ 
+	text-decoration: none;
+	font-size: 22px;
+	color: #00BFFF;	
+}
+.redit a:hover{ 
+	text-decoration: none;
+	font-size: 22px;	
+	color: #FF7F24;
+}
+.pin a:hover{ 
+	text-decoration: none;
+	font-size: 22px;
+	color: #FF0040;
+}
+.gthub a:hover{ 
+	text-decoration: none;
+	font-size: 22px;
+	color: #0033FF;
+}
+.fb {
+	font-size: 22px;
+	color: gray;
+	/*background-color: #1E90FF;*/
+}
+.gthub {
+	font-size: 22px;
+	color: gray;
+	/*background-color: #1E90FF;*/
+}
+.gmail{ 
+	font-size: 22px;
+	color: gray;
+	/*background-color: #FE2E2E;	*/	
 }
 .twitter { 
-	font-size: 20px;
-	/*background-color: #00BFFF;	*/	
+	font-size: 22px;
+	color: gray;
+	/*background-color: #00BFFF;*/
 }
-.yt { 
-	font-size: 20px;
-	/*background-color: red;	*/	
-}
-.tmblr { 
-	font-size: 20px;	
-	/*background-color: #00CED1;	*/
+.redit { 
+	font-size: 22px;
+	color: #F5F5F5;
+	/*background-color: #FF7F24;	*/
 }
 .pin { 
-	font-size: 20px;	
-    /*background-color: #FF1493;	*/
+	font-size: 22px;
+	color: gray;
+	/*background-color: #FF0040;*/
 }
 /*sidebar options*/
 

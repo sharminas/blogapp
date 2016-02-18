@@ -4,7 +4,7 @@
       <div class="col-md-offset-4 col-md-4 top">
          <div class="well">
             <h4><?php echo __('BlogApp');?></h4>  
-            <p style="text-align: center;"> <?php echo __('Share your ideas with everyone.);';?></p>
+            <p style="text-align: center;"> <?php echo __('Share your ideas with everyone.);');?></p>
                <hr>
                  <?php echo $this->Form->create(__('User',true), array('novalidate' => true)); ?>
                  <?php echo $this->Form->input(__('email', true), array('class' => 'form-control','div'=>array(

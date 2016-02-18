@@ -6,7 +6,7 @@ class ArticlesController extends AppController {
 	public $components = array('Paginator');
 	public function beforeFilter() {
     	parent::beforeFilter();
-        $this->Auth->allow('index','view','index_filter','search'); 
+        $this->Auth->allow('index','view','index_filter','search','home'); 
     }
     public function isAuthorized($user) {
     	if ($this->action === 'add') {
@@ -23,9 +23,13 @@ class ArticlesController extends AppController {
 	public function index() {
         $this->paginate = array(
 		'order' => array('Article.created' => 'desc'),
-        'limit' => 5);
+        'limit' => 7);
 	     $pagiArticle = $this->paginate('Article');
 	     $this->set('articles', $pagiArticle);	
+    }
+    public function home() {
+         $articles = $this->Article->find('all');  
+        $this->set('articles', $articles);	
     }
     public function index_filter() {
 		$where['status'] = 0;
@@ -38,9 +42,8 @@ class ArticlesController extends AppController {
 		$articles = $this->Article->find('all', array(
 		        'conditions' => $where,
 		        'order' => array('Article.created' => 'desc'),
-		        'limit' => 5));  
+		        'limit' => 7));  
         $this->set('articles', $articles);
-
     }
 	public function recent(){
 	   $articles = $this->Article->find('all', array(

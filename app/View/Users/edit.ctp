@@ -16,19 +16,19 @@
                </div>
             </div>
             </li>&nbsp; <hr>
-            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:#ff471a;"> &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:#ff471a;text-decoration:none;">
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:#00BFFF;"> &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:#00BFFF;text-decoration:none;">
                 <?php  echo $this->Html->link(__('Change Password'), array( 'controller' => 'users','action' => 'reset')); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:#ff471a;">&nbsp;
+            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:#00BFFF;">&nbsp;
               <?php  echo $this->Html->link(__('My Articles'),array( 'controller' => 'users','action' => 'users_article',AuthComponent::user('id'))); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:#ff471a;">&nbsp;
+            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:#00BFFF;">&nbsp;
               <?php  echo $this->Html->link(__('My Genre'),array( 'controller' => 'users','action' => 'users_category',AuthComponent::user('id'))); ?></span></li>
             &nbsp;&nbsp;&nbsp;&nbsp; 
          </ul>
       </div>
       <div class="col-sm-9 col-md-8">
          <div id="registration">
-            <h5><?php echo __('Hi, this is your information you can edit or modify your profile.'); ?></h5>
+            <h5><?php echo (__('Hi, this is your information you can edit or modify your profile.')); ?></h5>
                 <?php echo $this->Form->create('User', array('novalidate' => true)); 
                       echo $this->Form->input('id');
                       echo $this->Form->input('email', array('class' => 'form-control','div' => array(
@@ -47,7 +47,8 @@
                         'class' => 'form-control', 'div' => array('class' => 'form-group'), 'label' => 
                         'About Me:')); 
                ?> 
-            <button class="btn btn-sm btn-primary btn-block" type="submit"><?php __('Update my Profile'); ?></button>
+            <button class="btn btn-sm btn-primary btn-block" type="submit">
+              <?php echo (__('Update my Profile')); ?></button>
          </div>
       </div>
      </div>

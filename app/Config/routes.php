@@ -19,7 +19,8 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-    // Router::connectNamed(array('lang'));
+
+    Router::connect('/:language/:controller/:action/*', array(),array('language' => '[a-z]{3}'));
 	Router::connect('/', array('controller' => 'articles', 'action' => 'index'));
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 /**

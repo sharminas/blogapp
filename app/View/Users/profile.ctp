@@ -17,12 +17,12 @@
                   </div>
                </div>
             </li>&nbsp; <hr>
-            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:#ff471a;"> &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:#ff471a; text-decoration:none;">
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:#00BFFF;"> &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:#00BFFF; text-decoration:none;">
                 <?php  echo $this->Html->link(__('Change Password'), array( 'controller' => 'users', 'action' => 'reset')); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:#ff471a;">&nbsp;
+            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:#00BFFF;">&nbsp;
               <?php  echo $this->Html->link(__('My Articles'),array( 'controller' => 'users','action' => 'users_article',AuthComponent::user('id'))); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:#ff471a;">&nbsp;
+            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:#00BFFF;">&nbsp;
                <?php  echo $this->Html->link(__('My Genre'),array( 'controller' => 'users','action' => 'users_category',AuthComponent::user('id'))); ?></span></li>
          </ul>
       </div>

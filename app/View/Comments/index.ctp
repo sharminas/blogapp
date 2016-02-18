@@ -1,5 +1,5 @@
 <div="container"> 
-   <div class="row">
+    <div class="row">
 		<div class="blog-post" id="margin">
 		   <?php foreach($comments as $comment): ?>
 				<p style="color:black;"> 
@@ -9,5 +9,5 @@
 				  <small> &nbsp; <?php echo __('says'); ?> &nbsp;<?php echo $comment['Comment']['comment'];?></small>
 		   <?php endforeach; ?>
 		</div>
-   </div>
+    </div>
 </div>

@@ -1,4 +1,3 @@
-
 <?php
 App::uses('BlowfishPasswordHasher','Controller/Component/Auth');
 App::uses('Controller', 'Controller');
@@ -23,19 +22,7 @@ class AppController extends Controller{
        return false;
     }
     public function beforeFilter(){
-            // $this->Session->write('Config.language', 'eng'); 
-       Configure::write('Config.language', $this->Session->read('Config.language'));
-    } 
+         $this->Session->write('Config.language', 'eng'); 
+    }
 }
-?>
-
-<?Php
-    //   if(isset($this->request->params['named']['lang'])){
-    //      Configure::write('Config.language',$this->request->params['named']['lang']);
-    //      $this->Article->locale= $this->request->params['named']['lang'];
-    //   }else{
-    //     Configure::write('Config.language', 'eng');
-    //   }
-    // }
-
 ?>

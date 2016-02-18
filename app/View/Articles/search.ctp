@@ -2,10 +2,10 @@
    <div class="container">
       <div class="row">
          <div class="col-sm-9 blog-main">
-            <h3> <?php echo __('Search Result:');?> </h3>
-            <p class="search"> </p>
+            <h3> <?php echo __('Search Result:');?>  </h3>
+            <p id="txtSearch"></p>
          </div>
-         <div class="col-sm-3 blog-sidebar adjust">
+         <div class="col-sm-3 blog-sidebar">
            <?php echo $this->Element('search_sidebar');?>
          </div>
       </div>

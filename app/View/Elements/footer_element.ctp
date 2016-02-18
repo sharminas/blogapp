@@ -2,20 +2,28 @@
   <div class="container">
       <div class="row">
         <div class="col-md-12">
-            <h4 style="color: gray; font-style: 20px; text-align:left;">BlogApp<hr style="color: gray;"></h4>
+            <ul class="navbar-nav navbar-right">
+                  <li></li>
+                  <li class="fb media"><?php  echo $this->Html->link(__('<span class="fa fa-facebook-official"> </span>'), 'https://github.com/sharminas/blogapp',array('escape' => false));?></li>
+                  <li class="gmail media"><?php echo $this->Html->link(__('<span class="fa fa-google-plus"> </span>'), 'https://github.com/sharminas/blogapp', array('escape' => false));?></li>
+                  <li class="gthub media"><?php echo $this->Html->link(__('<span class=" fa fa-github-square"> </span>'), 'https://github.com/sharminas/blogapp', array('escape' => false));?></li>
+                  <li class="pin media"><?php echo $this->Html->link(__('<span class="fa fa-pinterest"> </span>'),'https://github.com/sharminas/blogapp',array('escape' => false));?> </li>
+                  <li class="redit media"><?php echo $this->Html->link(__('<span class="fa fa-reddit"> </span>'),'https://github.com/sharminas/blogapp',array('escape' => false));?></li>
+                  <li class="twitter media"><?php echo $this->Html->link(__('<span class="fa fa-twitter"> </span>'),"#",array('escape' => false));?></li>
+            </ul>
+          <h4 style="color:gray; font-style: 20px; text-align:left;">BlogApp<hr style="color: gray;"></h4>
         </div>  
         <div class="col-md-3">
-          <div class="archive-module">
-            <h4 class="foot"><?php echo __('Recent Articles') ?> <hr style="color: gray;"></h4>
-            <?php if($articles) :?>
-              <?php foreach($articles as $article):?>
-                <?php if($article['Article']['id'] == 3):?>               
-                <p class="footer"><?php echo $this->Html->link($article['Article']['title'],array('controller' => 'articles','action' =>'view',$article['Article']['id']));?></p>
-                <small><?php echo $this->Time->format('F j, Y h:i A',$article['Article']['created']); ?></small>
-                <?php endif; ?>
-              <?php endforeach; ?>
-            <?php endif;  ?>
-          </div>
+           <h4 class="foot"><?php echo __('Contact Us') ?><hr style="color: gray;"></h4>
+           <?php echo $this->Form->create('Contact', array('novalidate' => true)); ?>
+            <?php echo $this->Form->input('name', array('class' => 'form-control', 
+                 'div' => array('class' => 'form-group')));
+                  echo $this->Form->input('email',array('class' => 'form-control', 
+                 'div' => array('class' => 'form-group')));
+                  echo $this->Form->input('message', array( 'type' => 'textbox','class' => 'form-control', 
+                 'div' => array('class' => 'form-group')));
+            ?>
+             <button class="btn btn-sm btn-primary btn-block" type="submit"> <?php echo __('Send'); ?> </button> 
         </div>  
         <div class="col-md-6">
           <div class="archive-module">
@@ -41,4 +49,5 @@
           <?php endif;  ?>
         </div>
       </div>
-    </div>    
+    </div>
+  </div>    

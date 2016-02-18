@@ -18,11 +18,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-//setLocale(LC_ALL, 'deu');
-//Configure::write('Config.language', 'en');
-// Configure::write('Config.language', 'fra');
-//Configure::write('Config.language', 'eng');
-
 /**
  * CakePHP Debug Level:
  *
@@ -384,4 +379,4 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
-//Configure::write('Config.language', 'eng');
+ 

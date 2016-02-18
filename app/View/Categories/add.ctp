@@ -1,3 +1,4 @@
+<?php echo $this->Form->create('Category', array('novalidate' => true)); ?>
 <div class="container-fluid">
   <div class="row well">
     <div class="col-sm-3 col-md-3">
@@ -29,7 +30,6 @@
 
     </ul>
   </div>
-  <?php echo $this->Form->create('Category', array('novalidate' => true)); ?>
     <h1><?php echo __('Add Category'); ?></h1>
       <div class="col-sm-9 col-md-8 main">
             <?php echo $this->Form->input(__('title'), array('class' => 'form-control',

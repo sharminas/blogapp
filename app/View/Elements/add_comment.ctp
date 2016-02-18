@@ -7,5 +7,5 @@
       <?php echo ($article['Comment']['comment']); ?>
   </p>
 <?php else: ?>
-	<?php echo __('No Comments); '?>
+	<?php echo __('No Comments');?>
 <?php  endif ; ?>

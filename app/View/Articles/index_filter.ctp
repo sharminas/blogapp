@@ -15,29 +15,28 @@
               </div>
               <div class="blog-post-title">                
                 <h2 class="topic"><?php echo $this->Html->link(__($article['Article']['title'],true),array('controller' => 'articles','action' =>'view',$article['Article']['id']));?>
-                  <small class="author"> by : <?php echo $this->Html->link($article['User']['firstname'],array('controller' => 'users', 'action' => 'view', $article['User']['id']));?>
-                  </small>
+                  <small class="author" title=" I'm <?php echo  $article['User']['firstname']?>, <?php echo $article['User']['about'] ?> <br> please visit and read my article" data-toggle="popover1" data-placement="right"> by : <?php echo $this->Html->link($article['User']['firstname'],array('controller' => '#', 'action' => '#', $article['User']['id']));?></small>
                 </h2>
                 <p style="font-size: 11px;"><?php echo $this->Time->format('F j, Y h:i A',$article['Article']['created']); ?>
                 </p>                
               </div>
               <div class="blog-post-meta" style="text-align:center; color: gray;">
-                  <?php echo $this->Html->tag('span',$this->Text->truncate($article['Article']['body'],250));?>
+                  <?php echo $this->Html->tag('span',$this->Text->truncate($article['Article']['body'],350));?>
               </div>
                 <p class="conti"><?php echo $this->Html->link(__('Continue Reading...'),array('controller' => 'articles','action' =>'view',$article['Article']['id'])); ?></p>
                 <hr style="border: 1px solid #DCDCDC">
             </div>
             <?php endforeach;?>
-            <?php else:?>
+        <?php else:?>
               <p class="p"><?php echo(__("No Articles Found")); ?></p>
         <?php endif;?>
         </div>&nbsp;&nbsp; &nbsp; 
-         <div class="col-sm-3 blog-sidebar adjust">
+         <div class="col-sm-3 blog-sidebar">
            <?php echo $this->Element('side_bar_search');?>
          </div>
       </div>
     </div> 
-
+  </div>
     <div class="jumbotron" style="background-color:white; border: none; height: 3cm;">
     </div>
      <div class="jumbotron" style="background-color:black; border: none;">

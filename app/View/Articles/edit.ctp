@@ -10,7 +10,7 @@
                         $attributes=array('legend'=>false);
                   echo $this->Form->radio('status',$options,$attributes, array('class' => 'form-control','div' => array('class' => 'form-group')));?>
               </li>        
-              <button class="btn btn-sm btn-primary btn-block" type="submit"> <?php  __('Save Article'); ?>
+              <button class="btn btn-sm btn-primary btn-block" type="submit"> <?php echo __('Save Article'); ?>
               </button>    
               &nbsp;&nbsp;&nbsp;&nbsp; 
           </ul>
