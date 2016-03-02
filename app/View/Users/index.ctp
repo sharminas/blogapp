@@ -1,56 +1,68 @@
-<div class="container">
-    <h1><?php echo __('User'); ?></h1>      
-    <div class="row">
-             <div class="col-md-12">
-              <table class="table">
-              <thead>
-              <tr>
-		            <th><?php echo $this->Paginator->sort('id'); ?></th>
-					<th><?php echo $this->Paginator->sort('email'); ?></th>
-					<th><?php echo $this->Paginator->sort('firstname'); ?></th>
-					<th><?php echo $this->Paginator->sort('lastname'); ?></th>
-					<th><?php echo $this->Paginator->sort('address'); ?></th>
-					<th><?php echo $this->Paginator->sort('gender'); ?></th>
-					<th><?php echo $this->Paginator->sort('created'); ?></th>
-					<th><?php echo $this->Paginator->sort('modified'); ?></th>
-					<th class="actions"><?php echo __('Actions'); ?></th>
-            </tr>
-            </thead>
-            <tbody>
-			<?php foreach ($users as $user): ?>
-			<tr>
-							<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['email']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['firstname']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['lastname']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['address']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['gender']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
-							<td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
-							<td class="actions">
-								<?php echo $this->Html->link(__('Add'), array('action' => 'add', ));?>
-								<?php echo $this->Html->link(__('View'), array('action' => 'view', 
-								 $user['User']['id'])); ?>
-								<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', 
-								 $user['User']['id'])); ?>
-								<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', 
-								 $user['User']['id']), array('confirm' => __('Are you sure you want to delete id number %s?',
-								 $user['User']['id']))); ?>
-							</td>
-		    </tr>
-           <?php endforeach; ?>
-            </tbody>
-            </table>
-	          	 <p>
-				<?php echo $this->Paginator->counter(array('format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
-				));?></p> 
-			    <div class="paging">
-				<?php echo $this->Paginator->prev('< ' . __('previous'), array(), null,  array('class' => 'prev'));
-					  echo $this->Paginator->numbers(array('separator' => '')); 
-					  echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next'));?>
-	            </div>
-        
- 		    </div>
- 	 </div>
+<div class="container-fluid">
+  <div class="row well">
+      <div class="col-sm-3 col-md-3">
+         <ul class="nav nav-sidebar profile">
+            <li>
+               <div class="row placeholders" style="margin-left: .25cm;">
+                  <div class="col-xs-6 col-sm-10 placeholder">
+                     <span class="glyphicon glyphicon-user" style="font-size: 100px; margin-left: 1cm; color:black;"> </span>
+                     <h5 style="margin-left:.25cm; font-size: 20px;">
+                      <?php echo AuthComponent::user('firstname')?>
+                        <?php echo AuthComponent::user('lastname')?>
+                     </h5>  
+                     <div style="margin-left:.25cm; font-size: 14px;">        
+                        <?php echo AuthComponent::user('email')?>
+                         &nbsp;
+                     </div>
+                  </div>
+                </div>
+            </li>&nbsp; <hr>
+              <h4 style="text-align:left; font-size: 18px;"><?php echo __('My Activities'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>
+                 'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:black; 
+                text-decoration:none;">&nbsp;<?php  echo $this->Html->link(__('Change Password')
+                ,array('controller' =>'users','action' => 'reset')); ?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:black;">&nbsp; 
+                <?php  echo $this->Html->link(__('My Articles'),array( 'controller' => 'users','action' => 'users_article',AuthComponent::user('id'))); ?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:black;">
+                 &nbsp;<?php  echo $this->Html->link(__('My Genre'),array( 'controller' => 
+                 'users','action' => 'users_category',AuthComponent::user('id'))); ?></span></li>  &nbsp;&nbsp;&nbsp;
+            <h4 style="text-align:left; font-size: 18px;"><?php echo __('Visit other Author'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('View all User'), array('controller'=>
+                 'users','action' => 'index'))?></span></li>&nbsp; 
+            <h4 style="text-align:left; font-size: 18px;"><?php echo __('Visit other Article'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-edit" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('Back to Articles'), array('controller'=>
+                 'articles','action' => 'index'))?></span></li>&nbsp;      
+            <li><span class="glyphicon glyphicon-home" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('Back to Home'), array('controller'=>
+                 'articles','action' => 'home'))?></span></li>&nbsp; 
+          </ul>
+      </div>
+    <div class="col-sm-5 "> 
+    <h2 class="topic" style="color:black;"><?php echo __('People who joined us.'); ?></h2>     
+    <div class="row"> &nbsp;
+      <div class="col-md-12">
+        <?php foreach($users as $user): ?>
+          <div class="row placeholders" style="margin-left: .25cm;">
+            <div class="col-xs-6 col-sm-10 placeholder">
+              <span class="glyphicon glyphicon-user" style="font-size: 100px; margin-left: 1cm; color:black;"> </span>
+                <h5 style="margin-left:.25cm; font-size: 20px;">
+                     <?php echo $user['User']['firstname']?> 
+                     <?php echo $user['User']['lastname']?>
+
+                </h5>  
+                <div style="margin-left:.25cm; font-size: 14px;">        
+                   <?php echo $user['User']['email'] ?> <br>
+                   <?php echo $user['User']['about'] ?>&nbsp;
+                </div>
+            </div>
+          </div>  &nbsp;
+        <?php endforeach; ?>
+ 	    </div>
+    </div>
 </div>
 

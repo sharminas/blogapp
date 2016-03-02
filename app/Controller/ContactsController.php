@@ -17,10 +17,10 @@ class ContactsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Contact->create();
 			if ($this->Contact->save($this->request->data)) {
-				$this->Session->setFlash('Your message  has been saved.','success');
+				$this->Session->setFlash(__('Your message  has been saved.'),'success');
 			    $this->redirect('/articles/index');
 			} else {
-				$this->Session->setFlash('The message could not be saved. Please, try again.','error');
+				$this->Session->setFlash(__('The message could not be saved. Please, try again.'),'error');
 			}
 		}
 	}

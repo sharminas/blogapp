@@ -1,3 +1,13 @@
+#main {
+    padding: 10px;
+    margin: 100px;
+    color: Green;
+    width: 365px;
+ }
+#display_results {
+    color:#222222; padding:5px;
+    background: #eeeeee;
+}
 /*fonts*/
 @font-face {
      font-family: jackFrost;
@@ -7,98 +17,164 @@
      font-family: Assassin$;
      src: url('localhost/blogapp/app/webroot/fonts/Assassin$.ttf'); 
 }
+/*testlang*/
+.styledselect select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+ }
+/*loading*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://localhost/blogapp/app/webroot/img/load.gif') 50% 50% no-repeat rgb(249,249,249);
+}
 /** CSS code **/
-body{
+body {
 	background-color: white;
 	margin-top: 45px;
 	font-family: "Arial", sans-serif;
 	border: none;
 }
+/*searchcss*/
+.scss {
+	font-size: 22px; 
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+/*background*/
+.bgBlogapp {
+	background-image: url("http://localhost/blogapp/app/webroot/img/wer.png");
+    background-repeat: repeat;
+}
 /*layout*/
+.font {
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 36px;
+}
 .headTop {
     margin-top: -.4cm;
 }
 .blogtop {
 	padding-top: 5px;
 }
-.adjust{
-	margin-top: -.009cm;
+.adjust {
+	margin-top: -.3cm;
 }
-.foot{
+.carouselTop {
+	margin-top: 3cm;
+}
+.formstyle {
+	text-decoration: none;
+	font-size: 14px;
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: gray;
+}
+.foot {
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
     text-transform: uppercase;
 	font-size: 16px;
 	font-style: normal;
 }
-.selection{
+.selection {
 	background-color:black; 
 	color: white; 
 	border:none; 
 	font-size: 20px;
 	padding: none;
+
 }
-.sidebar{ 
+.sidebar { 
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color:#F92672;
     text-transform: capitalize;
 	font-size: 12px;
 	font-style: normal;
 }
-.sidebar h4{
+/*sidebar h4*/
+.sidebar h4 {
 	border-bottom: 1px solid #ddd;	
 	padding: 5px 10px;
 }
+
 .sidebar ul{
 	padding: 5px 10px;
 }
 .text {
 	width: 230px;
-	border: 1px solid #F92672;
-	border-left: 4px solid #F92672;
+	/*border: 1px solid #F92672;
+	border-left: 4px solid #F92672;*/
 }
+/*footermedia*/
 .sideMedia{
 	margin-right: 6cm;
 	margin-left: -.40cm;
 	margin-top: 1cm;
 }
+/*sigin*/
+.rcorners {
+    border-radius: 25px;
+    border: 2px solid gray; 
+}
+
 /*fonts*/
-h2{	
+h2 {	
 	font-family:Times New Roman;
 	color: #F92672;
 	font-size: 30px;	
 }
-.author{
+.author {
 	font-size: 12px;
 	color: black;	
 }
-h4{
-	font-family:Lucida Sans Unicode;
-	font-size: 18px;
-	text-align: center;
+.cp {
+	font-family:  Jack Frost;
+	font-size: 50px;
+	letter-spacing: 2px;
+    color: red;
+    margin-top: 1.5cm;
+}
+.blogpar {
+   	color: black;
+   	font-size: 12px;
+   	margin-bottom: 1.5cm;
 }
 .head3 {
     font-family:Lucida Sans Unicode;
 	font-size: 18px;
 }
-h5{
+h5 {
     font-size: 18px;
 }
-.style{
+/*home.ctp css*/
+.style {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: #00BFFF;
+	border-radius: 5px;
     letter-spacing:  1px;
+    padding-top: 1px;
     text-transform: uppercase;
     font-size: 18px;
-    background-color:#F5F5F5;
-    color: black;
+    color: white;
 }
-.jumbotron-up{
+/*.jumbotron-up{
 	margin-top: -1.5cm;
-}
+}*/
+/*h4 font all pages*/
 .title{
 	text-align:center;
 	color: #00BFFF;
-	font-family:jackFrost;
+	letter-spacing:  5px;
+	font-family: Limelight;
 	font-size: 70px;
 }
 .p {
@@ -110,7 +186,8 @@ h5{
 .exit{
     font-size:18px; 
     background-color: #eccecf;
-    border:none; float:right; 
+    border:none; 
+    float:right; 
     color:red;
 }
 .error { 
@@ -122,24 +199,21 @@ h5{
 	font-weight:bold;
 }
 .error2 { 
-	background: #eccecf;
 	color:black;
-	border:2px solid #9e0b0f;
+	border-left:2px solid #9e0b0f;
 	padding:10px;
 	font-weight:bold;
 }
 .error3 { 
 	margin-top: -3%;
-	background: #eccecf;
 	color:black;
-	border:2px solid #9e0b0f;
+	border-left:2px solid #9e0b0f;
 	padding:10px;
 	font-weight:bold;
 }
 .success { 
-	background: #FFFACD; 
 	color: black;
-	border:2px solid #bedf5d; 
+	border-left:2px solid #bedf5d; 
 	padding:10px; 
 	font-weight:bold;
 	margin-top: 1cm;
@@ -161,24 +235,6 @@ h5{
     font-family: Arial;
 }
 /*nav menu and links*/
-.conti a:link {
-	text-decoration: none;
-	font-size: 12px;
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    letter-spacing: 2px;
-	text-transform: uppercase;
-    color: #00BFFF;;
-}
-.conti a:visited {
-    color: #00BFFF
-}
-.conti a:hover {
-	border: none;
-    color: black;
-}
-.conti .active {
-     color: #00BFFF;
-}
 /*heading*/
 .head a:link {
 	font-family:Lucida Sans Unicode;
@@ -196,12 +252,12 @@ h5{
 }
 /*Navigation Bar*/
 .menu a:link {
-	margin-left: .5cm;
-	font-size: 18px;
+	font-size: 14px;
     font-family:  Jack Frost;
     letter-spacing: 2px;
 	text-transform: uppercase;
-    color: #00BFFF;
+    color: white;
+
 }
 .menu a:visited {
     color: #00BFFF;
@@ -210,7 +266,7 @@ h5{
 	border: none;
     color: #F92672; 
 }
-.menu :active {
+.menu a:active {
     color: black;
 }
 /*Title and NAme*/
@@ -232,7 +288,25 @@ h5{
 .topic .active {
     color: #00BFFF;
 }
-
+/*next and previous*/
+.conti a:link {
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #00BFFF;;
+}
+.conti a:visited {
+    color: #00BFFF
+}
+.conti a:hover {
+	border: none;
+    color: black;
+}
+.conti a:active {
+     color: #00BFFF;
+}
 /*paginate*/
 .paginate a:link {
 	text-decoration: none;
@@ -240,7 +314,7 @@ h5{
 	font-family:Georgia;
     letter-spacing: 2px;
 	text-transform: uppercase;
-    color: gray;
+    color: black;
 }
 .paginate a:visited {
     color: #00BFFF;
@@ -248,12 +322,18 @@ h5{
 .paginate a:hover {
 	border: none;
 	text-decoration: none;
-    color: #00BFFF;;
+    color: #00BFFF;
 }
 .paginate a:active {
     color: #00BFFF;
 }
 /*FD971F*/
+/*login */
+.log a:link{
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
 /*sidebar*/
 .sideli :link {
 	text-decoration: none;
@@ -289,10 +369,15 @@ h5{
 	border: none;
     color: black;
 }
-.profile .active {
+.profile a:active {
     color: #00BFFF;
 }
-
+/*title head*/
+.homeTitle a:link {
+	font-size: 22px;
+	color:black;
+	text-decoration: none;
+}
 /*socialmedia*/
 .media a:link {
 	text-decoration: none;
@@ -324,7 +409,7 @@ a.footer:link {
 .footer a:hover {
 	border: none;
 	text-decoration: none;
-    color: white;
+    color: black;
 }
 .footer a:active {
     color: gray;
@@ -334,7 +419,7 @@ a.footer:link {
 	text-decoration: none;
 	font-size: 22px;
 	border: none;	
-	color: #1E90FF;
+	color: #0052cc;
 }
 .gmail a:hover { 
 	text-decoration: none;
@@ -354,43 +439,37 @@ a.footer:link {
 .pin a:hover{ 
 	text-decoration: none;
 	font-size: 22px;
-	color: #FF0040;
+	color: #DC143C;
 }
 .gthub a:hover{ 
 	text-decoration: none;
 	font-size: 22px;
-	color: #0033FF;
+	color: black;
 }
+/*footer socialmedia*/
 .fb {
 	font-size: 22px;
 	color: gray;
-	/*background-color: #1E90FF;*/
 }
 .gthub {
 	font-size: 22px;
 	color: gray;
-	/*background-color: #1E90FF;*/
 }
 .gmail{ 
 	font-size: 22px;
-	color: gray;
-	/*background-color: #FE2E2E;	*/	
+	color: gray;	
 }
 .twitter { 
 	font-size: 22px;
 	color: gray;
-	/*background-color: #00BFFF;*/
 }
 .redit { 
 	font-size: 22px;
 	color: #F5F5F5;
-	/*background-color: #FF7F24;	*/
 }
 .pin { 
 	font-size: 22px;
 	color: gray;
-	/*background-color: #FF0040;*/
 }
-/*sidebar options*/
 
 

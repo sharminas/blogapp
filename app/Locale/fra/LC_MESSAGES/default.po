@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-02-16 11:11+0800\n"
+"PO-Revision-Date: 2016-03-02 14:33+0800\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team:  <EMAIL@ADDRESS>\n"
 "Language: fr_FR\n"
@@ -17,23 +17,60 @@ msgstr ""
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: translate\n"
 
-#: Controller/ArticlesController.php:55;84;101
+#: Controller/ArticlesController.php:62;97;114
 msgid "Invalid article"
 msgstr "article non valide"
 
-#: Controller/CategoriesController.php:29;52;73
+#: Controller/ArticlesController.php:78;101
+msgid "The article has been saved."
+msgstr "L'article a été sauvé."
+
+#: Controller/ArticlesController.php:81;104
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+"L'article ne pouvait pas être sauvé. S'il vous plaît, essayer de nouveau."
+
+#: Controller/ArticlesController.php:118
+msgid "The article has been deleted."
+msgstr "L'article a été effacé."
+
+#: Controller/ArticlesController.php:121
+msgid "The article could not be deleted. Please, try again."
+msgstr ""
+"L'article ne pouvait pas être effacé. S'il vous plaît, essayer de nouveau."
+
+#: Controller/CategoriesController.php:29;50;71
 msgid "Invalid category"
 msgstr "catégorie non valide"
+
+#: Controller/CategoriesController.php:42;58
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+"La catégorie ne pouvait pas être sauvée. S'il vous plaît, essayer de nouveau."
+
+#: Controller/CategoriesController.php:54
+msgid "The category has been saved."
+msgstr "La catégorie a été sauvée."
+
+#: Controller/CategoriesController.php:75
+msgid "The category has been deleted."
+msgstr "La catégorie a été effacée."
+
+#: Controller/CategoriesController.php:78
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+"La catégorie ne pouvait pas être effacée. S'il vous plaît, essayer de "
+"nouveau."
 
 #: Controller/CommentsController.php:27;72;92
 msgid "Invalid comment"
 msgstr "commentaire invalide"
 
-#: Controller/CommentsController.php:76
+#: Controller/CommentsController.php:60;76
 msgid "The comment has been saved."
 msgstr "Le commentaire a été enregistré."
 
-#: Controller/CommentsController.php:79
+#: Controller/CommentsController.php:63;79
 msgid "The comment could not be saved. Please, try again."
 msgstr ""
 "Le commentaire n'a pas pu être sauvé. S'il vous plaît essayer à nouveau."
@@ -47,6 +84,15 @@ msgid "The comment could not be deleted. Please, try again."
 msgstr ""
 "Le commentaire n'a pas pu être supprimé. S'il vous plaît essayer à nouveau."
 
+#: Controller/ContactsController.php:20
+msgid "Your message  has been saved."
+msgstr "Votre message a été sauvé."
+
+#: Controller/ContactsController.php:23;36
+msgid "The message could not be saved. Please, try again."
+msgstr ""
+"Le message ne pouvait pas être sauvé. S'il vous plaît, essayer de nouveau."
+
 #: Controller/ContactsController.php:29
 msgid "Theres a problem, Sorry."
 msgstr "Theres un problème, Désolé."
@@ -54,11 +100,6 @@ msgstr "Theres un problème, Désolé."
 #: Controller/ContactsController.php:33
 msgid "Your message has been saved."
 msgstr "Votre message a été sauvé."
-
-#: Controller/ContactsController.php:36
-msgid "The message could not be saved. Please, try again."
-msgstr ""
-"Le message ne pouvait pas être sauvé. S'il vous plaît, essayer de nouveau."
 
 #: Controller/ContactsController.php:46
 msgid "Invalid Contact"
@@ -73,7 +114,17 @@ msgid "The message could not be deleted. Please, try again."
 msgstr ""
 "Le message ne pouvait pas être effacé. S'il vous plaît, essayer de nouveau."
 
-#: Controller/UsersController.php:136;143;179;196;379;387
+#: Controller/UsersController.php:98
+msgid "You have successfully logged in"
+msgstr "Vous vous êtes avec succès connectés"
+
+#: Controller/UsersController.php:117
+msgid "Invalid e-mail / password combination. Please try again"
+msgstr ""
+"Rendez infirme l'e-mail / la combinaison de mot de passe. Essayez s'il vous "
+"plaît de nouveau"
+
+#: Controller/UsersController.php:136;143;179;197;380;388
 msgid "This User is not existing"
 msgstr "Cet utilisateur n'existant"
 
@@ -81,9 +132,99 @@ msgstr "Cet utilisateur n'existant"
 msgid "You are already registered and logged in!"
 msgstr "Vous êtes déjà enregistrés et vous êtes connectés!"
 
+#: Controller/UsersController.php:168
+msgid ""
+"Your account has been created. You should receive an e-mail shortly to "
+"authenticate your account. Once validated you will be able to login."
+msgstr ""
+"Votre compte a été créé. Vous devriez recevoir un e-mail bientôt pour "
+"authentifier votre compte. Une fois validé vous serez en mesure de "
+"l'ouverture de session."
+
+#: Controller/UsersController.php:173
+msgid "Your account could not be created. Please, try again."
+msgstr ""
+"Votre compte ne pouvait pas être créé. S'il vous plaît, essayer de nouveau."
+
+#: Controller/UsersController.php:183
+msgid "Your profile has been saved. Login again"
+msgstr "Votre profil a été sauvé. Ouverture de session de nouveau"
+
+#: Controller/UsersController.php:186
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"L'utilisateur ne pouvait pas être sauvé. S'il vous plaît, essayer de nouveau."
+
+#: Controller/UsersController.php:201
+msgid "The user has been deleted."
+msgstr "L'utilisateur a été effacé."
+
+#: Controller/UsersController.php:204
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+"L'utilisateur ne pouvait pas être effacé. S'il vous plaît, essayer de "
+"nouveau."
+
+#: Controller/UsersController.php:242
+msgid "Email was sent to you in order to change your password."
+msgstr ""
+"Le courrier électronique vous a été envoyé pour changer votre mot de passe."
+
+#: Controller/UsersController.php:245
+msgid "No user was found with that email."
+msgstr "Aucun utilisateur n'a été trouvé avec ce courrier électronique."
+
+#: Controller/UsersController.php:254
+msgid "Invalid password reset token try again."
+msgstr ""
+"Le jeton de reconstruction de mot de passe sans fondement essaie de nouveau."
+
+#: Controller/UsersController.php:261;356
+msgid "Password changed."
+msgstr "Le mot de passe a changé."
+
+#: Controller/UsersController.php:264
+msgid "Password changed, you can now login with your new password."
+msgstr ""
+"Le mot de passe a changé, vous pouvez maintenant l'ouverture de session avec "
+"votre nouveau mot de passe."
+
+#: Controller/UsersController.php:298
+msgid "The email was resent. Please check your inbox."
+msgstr ""
+"Le courrier électronique était en veulent. Vérifiez s'il vous plaît votre "
+"inbox."
+
+#: Controller/UsersController.php:301
+msgid "The email could not be sent."
+msgstr "Le courrier électronique ne pouvait pas être envoyé."
+
+#: Controller/UsersController.php:316
+msgid "Your e-mail has been validated!"
+msgstr "Votre e-mail a été validé!"
+
+#: Controller/UsersController.php:329
+msgid "The url you accessed is no longer valid"
+msgstr "L'url auquel vous avez accédé est invalidant"
+
+#: Controller/UsersController.php:334
+msgid "Your password was sent to your registered email account"
+msgstr ""
+"Votre mot de passe a été envoyé au compte de votre courrier électronique "
+"inscrit"
+
+#: Controller/UsersController.php:337
+msgid ""
+"There was an error verifying your account. Please check the email you were "
+"sent, and retry the verification link."
+msgstr ""
+"Il y avait une erreur vérifiant votre compte. Vérifiez s'il vous plaît le "
+"courrier électronique que vous avez été envoyé et réessayez le lien de "
+"vérification."
+
 #: Plugin/like/View/Helper/likeHelper.php:48 View/Helper/LikeHelper.php:50
 msgid "and"
-msgstr ""
+msgstr "et"
 
 #: Plugin/like/View/Helper/likeHelper.php:46 View/Helper/LikeHelper.php:48
 msgid "%s people"
@@ -91,172 +232,409 @@ msgid_plural "%s people"
 msgstr[0] ""
 msgstr[1] ""
 
-#: View/Articles/add.ctp:21 View/Categories/add.ctp:20
-#: View/Categories/index.ctp:20 View/Categories/view.ctp:21
-#: View/Users/edit.ctp:19 View/Users/profile.ctp:20
-#: View/Users/users_article.ctp:20 View/Users/users_category.ctp:20
-#: View/Users/view.ctp:20
+#: View/Articles/add.ctp:21 View/Articles/edit.ctp:21
+#: View/Categories/add.ctp:20 View/Categories/index.ctp:19
+#: View/Categories/view.ctp:21 View/Users/edit.ctp:21 View/Users/index.ctp:20
+#: View/Users/profile.ctp:20 View/Users/users_article.ctp:21
+#: View/Users/users_category.ctp:20 View/Users/view.ctp:20
+msgid "My Activities"
+msgstr "Mes activités"
+
+#: View/Articles/add.ctp:23 View/Articles/edit.ctp:23
+#: View/Categories/add.ctp:22 View/Categories/index.ctp:21
+#: View/Categories/view.ctp:23 View/Users/edit.ctp:23 View/Users/index.ctp:22
+#: View/Users/profile.ctp:22 View/Users/users_article.ctp:23
+#: View/Users/users_category.ctp:22 View/Users/view.ctp:22
 msgid "My Profile"
 msgstr "Mon profil"
 
-#: View/Articles/add.ctp:23 View/Categories/add.ctp:22
-#: View/Categories/index.ctp:22 View/Categories/view.ctp:23
-#: View/Users/edit.ctp:21 View/Users/profile.ctp:22 View/Users/reset.ctp:24
-#: View/Users/users_article.ctp:22 View/Users/users_category.ctp:22
-#: View/Users/view.ctp:22
+#: View/Articles/add.ctp:26 View/Articles/edit.ctp:26
+#: View/Categories/add.ctp:25 View/Categories/index.ctp:24
+#: View/Categories/view.ctp:26 View/Users/edit.ctp:26 View/Users/index.ctp:25
+#: View/Users/profile.ctp:25 View/Users/reset.ctp:10
+#: View/Users/users_article.ctp:26 View/Users/users_category.ctp:25
+#: View/Users/view.ctp:25
 msgid "Change Password"
 msgstr "Changer le mot de passe"
 
-#: View/Articles/add.ctp:25 View/Categories/add.ctp:24
-#: View/Categories/index.ctp:24 View/Categories/view.ctp:26
-#: View/Users/edit.ctp:23 View/Users/profile.ctp:24;30
-#: View/Users/users_article.ctp:24 View/Users/users_category.ctp:24
-#: View/Users/view.ctp:24
+#: View/Articles/add.ctp:28 View/Articles/edit.ctp:29
+#: View/Categories/add.ctp:28 View/Categories/index.ctp:26
+#: View/Categories/view.ctp:29 View/Users/edit.ctp:29 View/Users/index.ctp:28
+#: View/Users/profile.ctp:28;46 View/Users/users_article.ctp:29
+#: View/Users/users_category.ctp:28 View/Users/view.ctp:28
 msgid "My Articles"
 msgstr "Mes articles"
 
-#: View/Articles/add.ctp:27 View/Categories/add.ctp:26
-#: View/Categories/index.ctp:26 View/Categories/view.ctp:28
-#: View/Users/edit.ctp:25 View/Users/profile.ctp:26
-#: View/Users/users_article.ctp:26 View/Users/users_category.ctp:26
-#: View/Users/view.ctp:26
+#: View/Articles/add.ctp:30 View/Articles/edit.ctp:31
+#: View/Categories/add.ctp:30 View/Categories/index.ctp:28
+#: View/Categories/view.ctp:31 View/Users/edit.ctp:31 View/Users/index.ctp:30
+#: View/Users/profile.ctp:30 View/Users/users_article.ctp:31
+#: View/Users/users_category.ctp:30 View/Users/view.ctp:30
 msgid "My Genre"
 msgstr "mon Genre"
 
-#: View/Articles/add.ctp:28 View/Articles/edit.ctp:13
-msgid "Save Article"
-msgstr "Sauvez l'Article"
+#: View/Articles/add.ctp:32 View/Articles/edit.ctp:33
+#: View/Categories/add.ctp:32 View/Categories/index.ctp:30
+#: View/Categories/view.ctp:33 View/Users/edit.ctp:33 View/Users/index.ctp:32
+#: View/Users/profile.ctp:32 View/Users/users_article.ctp:33
+#: View/Users/users_category.ctp:32 View/Users/view.ctp:32
+msgid "Visit other Author"
+msgstr "Visitez autres Auteur"
 
-#: View/Articles/add.ctp:40 View/Layouts/default.ctp:60
+#: View/Articles/add.ctp:34 View/Articles/edit.ctp:35
+#: View/Categories/add.ctp:34 View/Categories/index.ctp:32
+#: View/Categories/view.ctp:35 View/Users/edit.ctp:35 View/Users/index.ctp:34
+#: View/Users/profile.ctp:34 View/Users/users_article.ctp:35
+#: View/Users/users_category.ctp:34 View/Users/view.ctp:34
+msgid "View all User"
+msgstr "Voir tous les utilisateurs"
+
+#: View/Articles/add.ctp:36 View/Articles/edit.ctp:37
+#: View/Categories/add.ctp:36 View/Categories/index.ctp:34
+#: View/Categories/view.ctp:37 View/Users/edit.ctp:37 View/Users/index.ctp:36
+#: View/Users/profile.ctp:36 View/Users/users_article.ctp:37
+#: View/Users/users_category.ctp:36 View/Users/view.ctp:36
+msgid "Visit other Article"
+msgstr "Visitez autre article"
+
+#: View/Articles/add.ctp:38 View/Articles/edit.ctp:39
+#: View/Categories/add.ctp:38 View/Categories/index.ctp:36
+#: View/Categories/view.ctp:39 View/Users/edit.ctp:39 View/Users/index.ctp:38
+#: View/Users/profile.ctp:38 View/Users/users_article.ctp:39
+#: View/Users/users_category.ctp:38 View/Users/view.ctp:38
+msgid "Back to Articles"
+msgstr "Retour aux articles"
+
+#: View/Articles/add.ctp:41 View/Articles/edit.ctp:42
+#: View/Categories/add.ctp:41 View/Categories/index.ctp:39
+#: View/Categories/view.ctp:42 View/Users/edit.ctp:42 View/Users/index.ctp:41
+#: View/Users/profile.ctp:41 View/Users/users_article.ctp:42
+#: View/Users/users_category.ctp:41 View/Users/view.ctp:41
+msgid "Back to Home"
+msgstr "De retour à la maison"
+
+#: View/Articles/add.ctp:47 View/Articles/home.ctp:20
+#: View/Articles/index.ctp:19 View/Articles/index_filter.ctp:18
+#: View/Articles/search.ctp:20 View/Articles/view.ctp:17
+#: View/Contacts/add.ctp:19
 msgid "Add Article"
 msgstr "Ajouter article"
 
-#: View/Articles/add.ctp:42 View/Categories/add.ctp:35
+#: View/Articles/add.ctp:52 View/Categories/add.ctp:49
 msgid "title"
 msgstr ""
 
-#: View/Articles/add.ctp:55 View/Articles/index.ctp:50
-#: View/Articles/index_filter.ctp:47 View/Articles/search.ctp:17
-#: View/Articles/view.ctp:60 View/Categories/add.ctp:48
-#: View/Contacts/add.ctp:26 View/Users/add.ctp:76 View/Users/edit.ctp:61
-#: View/Users/login.ctp:29 View/Users/profile.ctp:98
-#: View/Users/users_article.ctp:70 View/Users/users_category.ctp:60
-msgid "@2060 BlogApp.Inc"
-msgstr ""
+#: View/Articles/add.ctp:79 View/Articles/index.ctp:104
+msgid "Posted "
+msgstr "Posté"
 
-#: View/Articles/add.ctp:56 View/Articles/index.ctp:51
-#: View/Articles/index_filter.ctp:48 View/Articles/search.ctp:18
-#: View/Articles/view.ctp:61 View/Categories/add.ctp:49 View/Users/edit.ctp:62
-#: View/Users/profile.ctp:99 View/Users/users_article.ctp:71
-#: View/Users/users_category.ctp:61
+#: View/Articles/add.ctp:84 View/Articles/home.ctp:100;115;132;150;169
+#: View/Articles/index.ctp:111 View/Articles/index_filter.ctp:109
+#: View/Elements/recent.ctp:10 View/Users/users_article.ctp:71
+#: View/Users/users_category.ctp:68
+msgid "Continue Reading..."
+msgstr "Continuer la lecture..."
+
+#: View/Articles/add.ctp:90 View/Articles/index.ctp:117
+#: View/Articles/index_filter.ctp:114 View/Elements/recent.ctp:14
+msgid "No Articles Found"
+msgstr "Aucun article trouvé"
+
+#: View/Articles/add.ctp:93 View/Articles/index.ctp:121
+#: View/Contacts/index.ctp:41
+msgid "previous"
+msgstr "précédent"
+
+#: View/Articles/add.ctp:97 View/Articles/index.ctp:125
+#: View/Contacts/index.ctp:43
+msgid "next"
+msgstr "ensuite"
+
+#: View/Articles/add.ctp:107 View/Articles/edit.ctp:69
+#: View/Articles/home.ctp:215 View/Articles/index.ctp:139
+#: View/Articles/index_filter.ctp:128 View/Articles/search.ctp:114
+#: View/Articles/view.ctp:209 View/Categories/add.ctp:65
+#: View/Comments/add.ctp:24 View/Contacts/add.ctp:103 View/Users/add.ctp:54
+#: View/Users/edit.ctp:71 View/Users/login.ctp:43 View/Users/profile.ctp:115
+#: View/Users/request_password_change.ctp:22 View/Users/reset.ctp:19
+#: View/Users/search.ctp:76 View/Users/users_article.ctp:89
+#: View/Users/users_category.ctp:75
+msgid "@2060 BlogApp.Inc"
+msgstr "@2060 BlogApp.Inc"
+
+#: View/Articles/add.ctp:108 View/Articles/home.ctp:216
+#: View/Articles/index.ctp:140 View/Articles/index_filter.ctp:129
+#: View/Articles/search.ctp:115 View/Articles/view.ctp:210
+#: View/Categories/add.ctp:66 View/Users/edit.ctp:72
+#: View/Users/profile.ctp:116 View/Users/search.ctp:77
+#: View/Users/users_article.ctp:90
 msgid "Back to Top"
 msgstr "Retour au haut de page"
 
-#: View/Articles/edit.ctp:3
+#: View/Articles/comment.ctp:7 View/Comments/index.ctp:9
+#: View/Comments/view.ctp:8 View/Elements/add_comment.ctp:6
+msgid "says"
+msgstr "dit"
+
+#: View/Articles/edit.ctp:47
 msgid "Edit Article"
 msgstr "Modifier l'article"
 
-#: View/Articles/edit.ctp:7
+#: View/Articles/edit.ctp:53
 msgid "category_id"
 msgstr "category_id"
 
-#: View/Articles/index.ctp:11 View/Articles/index_filter.ctp:11
+#: View/Articles/edit.ctp:61
+msgid "Save Article"
+msgstr "Sauvez l'Article"
+
+#: View/Articles/home.ctp:22 View/Articles/index.ctp:20
+#: View/Articles/index_filter.ctp:20 View/Articles/search.ctp:21
+#: View/Articles/view.ctp:19 View/Contacts/add.ctp:20
+msgid "Profile"
+msgstr "Profil"
+
+#: View/Articles/home.ctp:23 View/Articles/index.ctp:22
+#: View/Articles/index_filter.ctp:22 View/Articles/search.ctp:22
+#: View/Articles/view.ctp:20 View/Contacts/add.ctp:22
+msgid "Logout"
+msgstr "Se déconnecter"
+
+#: View/Articles/home.ctp:23 View/Articles/index.ctp:22
+#: View/Articles/index_filter.ctp:22 View/Articles/search.ctp:22
+#: View/Articles/view.ctp:20 View/Contacts/add.ctp:22
+msgid "Are you sure you want to logout?"
+msgstr "Êtes-vous sûr de vouloir vous déconnecter?"
+
+#: View/Articles/home.ctp:30 View/Articles/index.ctp:29
+#: View/Articles/index_filter.ctp:29 View/Articles/search.ctp:28
+#: View/Articles/view.ctp:27 View/Contacts/add.ctp:29
+msgid "Sign in"
+msgstr "Signer le registre"
+
+#: View/Articles/home.ctp:31 View/Articles/index.ctp:30
+#: View/Articles/index_filter.ctp:30 View/Articles/search.ctp:29
+#: View/Articles/view.ctp:28 View/Contacts/add.ctp:30 View/Users/login.ctp:32
+msgid "Sign up"
+msgstr "Signer le registre"
+
+#: View/Articles/home.ctp:36 View/Articles/index.ctp:35
+#: View/Articles/index_filter.ctp:35 View/Articles/search.ctp:34
+#: View/Articles/view.ctp:33
+msgid "Search..."
+msgstr "Chercher ..."
+
+#: View/Articles/home.ctp:54 View/Articles/index.ctp:54
+#: View/Articles/index_filter.ctp:53 View/Articles/search.ctp:52
+#: View/Articles/view.ctp:54 View/Contacts/add.ctp:48 View/Users/search.ctp:14
+msgid "Home"
+msgstr "Accueil"
+
+#: View/Articles/home.ctp:56 View/Articles/index.ctp:55
+#: View/Articles/index_filter.ctp:54 View/Articles/search.ctp:53
+#: View/Articles/view.ctp:56 View/Contacts/add.ctp:50 View/Users/search.ctp:15
+msgid "Articles"
+msgstr "Articles"
+
+#: View/Articles/home.ctp:58 View/Articles/index.ctp:56
+#: View/Articles/index_filter.ctp:55 View/Articles/search.ctp:54
+#: View/Articles/view.ctp:58 View/Contacts/add.ctp:52 View/Users/search.ctp:16
+msgid "About"
+msgstr "sur"
+
+#: View/Articles/home.ctp:59 View/Articles/index.ctp:57
+#: View/Articles/index_filter.ctp:56 View/Articles/search.ctp:55
+#: View/Articles/view.ctp:59 View/Contacts/add.ctp:53 View/Contacts/view.ctp:2
+#: View/Users/search.ctp:17
+msgid "Contact"
+msgstr "Contactez"
+
+#: View/Articles/home.ctp:66;76 View/Articles/index.ctp:64;71
+#: View/Articles/index_filter.ctp:64;71 View/Articles/search.ctp:62;69
+#: View/Articles/view.ctp:68;78 View/Contacts/add.ctp:61;71
+#: View/Users/search.ctp:25;32
+msgid "ENG"
+msgstr "ENG"
+
+#: View/Articles/home.ctp:70 View/Articles/index.ctp:68
+#: View/Articles/index_filter.ctp:68 View/Articles/search.ctp:66
+#: View/Articles/view.ctp:72 View/Contacts/add.ctp:65 View/Users/search.ctp:29
+msgid "POR"
+msgstr "POR"
+
+#: View/Articles/home.ctp:72 View/Articles/index.ctp:69
+#: View/Articles/index_filter.ctp:69 View/Articles/search.ctp:67
+#: View/Articles/view.ctp:74 View/Contacts/add.ctp:67 View/Users/search.ctp:30
+msgid "FRA"
+msgstr "FRA"
+
+#: View/Articles/home.ctp:74 View/Articles/index.ctp:70
+#: View/Articles/index_filter.ctp:70 View/Articles/search.ctp:68
+#: View/Articles/view.ctp:76 View/Contacts/add.ctp:69 View/Users/search.ctp:31
+msgid "AFR"
+msgstr ""
+
+#: View/Articles/home.ctp:89 View/Elements/search_sidebar.ctp:67
+#: View/Elements/side_bar.ctp:85 View/Elements/side_bar_search.ctp:95
+#: View/Elements/side_bar_search_2.ctp:47
+msgid "Recent Articles"
+msgstr "Articles récents"
+
+#: View/Articles/home.ctp:105 View/Elements/search_sidebar.ctp:22
+#: View/Elements/side_bar.ctp:51 View/Elements/side_bar_search.ctp:52
+#: View/Elements/side_bar_search_2.ctp:18 View/Elements/user_searchbar.ctp:50
+msgid "Technology"
+msgstr "La technologie"
+
+#: View/Articles/home.ctp:121
+msgid "Random"
+msgstr "Au hasard"
+
+#: View/Articles/home.ctp:139 View/Elements/search_sidebar.ctp:24
+#: View/Elements/side_bar.ctp:55 View/Elements/side_bar_search.ctp:54
+#: View/Elements/side_bar_search_2.ctp:22 View/Elements/user_searchbar.ctp:52
+msgid "Programming"
+msgstr "Programmation"
+
+#: View/Articles/home.ctp:157
+msgid "Science"
+msgstr "Science"
+
+#: View/Articles/home.ctp:177
+msgid "Gallery"
+msgstr "Galerie"
+
+#: View/Articles/index.ctp:89 View/Articles/index_filter.ctp:87
 msgid ""
 "<span class=\"glyphicon glyphicon-pencil\" style=\"font-size: 18px; color:"
 "gray;\"> </span>"
 msgstr ""
 
-#: View/Articles/index.ctp:13 View/Articles/index_filter.ctp:13
-#: View/Articles/view.ctp:10 View/Categories/index.ctp:37
-#: View/Categories/view.ctp:43 View/Users/users_article.ctp:39
-#: View/Users/users_category.ctp:39
+#: View/Articles/index.ctp:92 View/Articles/view.ctp:96
+#: View/Categories/index.ctp:51 View/Categories/view.ctp:60
+#: View/Users/users_article.ctp:57 View/Users/users_category.ctp:55
 msgid ""
 "<span class=\"glyphicon glyphicon-trash\" style=\"font-size: 18px; color:red;"
 "\"> </span>"
 msgstr ""
 
-#: View/Articles/index.ctp:13 View/Articles/index_filter.ctp:13
-#: View/Articles/view.ctp:10
+#: View/Articles/index.ctp:92 View/Articles/index_filter.ctp:92
+#: View/Articles/view.ctp:97
 msgid "Are you sure you want to delete this article?"
 msgstr "Êtes-vous sûrs que vous voulez effacer cet article ?"
 
-#: View/Articles/index.ctp:27 View/Articles/index_filter.ctp:27
-#: View/Elements/recent.ctp:10 View/Users/users_article.ctp:49
-#: View/Users/users_category.ctp:48
-msgid "Continue Reading..."
-msgstr "Continuer la lecture..."
+#: View/Articles/index.ctp:101
+msgid "please visit and read my article"
+msgstr "S'il vous plaît visiter et lire mon article"
 
-#: View/Articles/index.ctp:32 View/Articles/index_filter.ctp:32
-#: View/Elements/recent.ctp:14
-msgid "No Articles Found"
-msgstr "Aucun article trouvé"
+#: View/Articles/index_filter.ctp:90
+msgid ""
+"<span class=\"glyphicon glyphicon-trash\" style=\n"
+"                         \"font-size: 18px; color:red;\"> </span>"
+msgstr ""
 
-#: View/Articles/index.ctp:40 View/Contacts/index.ctp:41
-#: View/Users/index.ctp:48
-msgid "previous"
-msgstr "précédent"
+#: View/Articles/search.ctp:89 View/Users/search.ctp:54
+msgid ""
+"<p style='font-size: 24px; font-family: Century Gothic,CenturyGothic,"
+"AppleGothic,sans-serif;'>You forgot to enter a search term!!!</p>"
+msgstr "Vous avez oublié d'entrer dans un terme de recherche!!!"
 
-#: View/Articles/index.ctp:41 View/Contacts/index.ctp:43
-#: View/Users/index.ctp:50
-msgid "next"
-msgstr "ensuite"
+#: View/Articles/search.ctp:92 View/Users/search.ctp:57
+msgid ""
+"<p style='font-size: 22px; font-family: Century Gothic,CenturyGothic,"
+"AppleGothic,sans-serif;'>Sorry, but we can not find the title of that "
+"Article.</p><br><br>"
+msgstr "Désolé, mais nous ne pouvons pas trouver le titre de cet Article"
 
-#: View/Articles/search.ctp:5
-msgid "Search Result:"
-msgstr "Fouillez le Résultat :"
+#: View/Articles/search.ctp:95 View/Users/search.ctp:60
+msgid "Search For: "
+msgstr "Recherche :"
 
-#: View/Articles/view.ctp:8 View/Categories/index.ctp:34
-#: View/Categories/view.ctp:41 View/Users/users_article.ctp:37
-#: View/Users/users_category.ctp:37
+#: View/Articles/view.ctp:93 View/Categories/view.ctp:57
+#: View/Users/users_article.ctp:54 View/Users/users_category.ctp:53
 msgid ""
 "<span class=\"glyphicon glyphicon-pencil\" style=\"font-size: 18px; color:"
 "black;\"> </span>"
 msgstr ""
 
-#: View/Articles/view.ctp:26 View/Comments/add.ctp:6
+#: View/Articles/view.ctp:108
+msgid "Posted: "
+msgstr "Posté"
+
+#: View/Articles/view.ctp:115 View/Elements/search_sidebar.ctp:4
+#: View/Elements/side_bar.ctp:33 View/Elements/side_bar_search.ctp:33
+#: View/Elements/side_bar_search_2.ctp:3 View/Elements/user_searchbar.ctp:31
+msgid "Archives"
+msgstr "Archives"
+
+#: View/Articles/view.ctp:149
+msgid "No related Article"
+msgstr "Aucun Article lié"
+
+#: View/Articles/view.ctp:155 View/Comments/add.ctp:5
 msgid "Add Comment"
 msgstr "Ajoutez le Commentaire"
 
-#: View/Articles/view.ctp:28
+#: View/Articles/view.ctp:158
 msgid ""
 "<span class=\"glyphicon glyphicon-comment\" style=\"font-size:22px; color:"
 "black;\"></span>"
 msgstr ""
 
-#: View/Categories/add.ctp:33 View/Categories/edit.ctp:3
-#: View/Layouts/default.ctp:61
+#: View/Articles/view.ctp:161
+msgid "To like this article, please login"
+msgstr "Pour aimer cet article, s'il vous plaît vous connecter"
+
+#: View/Articles/view.ctp:163
+msgid "I like this article"
+msgstr "J'aime cet article"
+
+#: View/Articles/view.ctp:166
+msgid "To unlike this article, please login"
+msgstr "Pour la différence de cet article, s'il vous plaît vous connecter"
+
+#: View/Articles/view.ctp:168
+msgid "I dont like this article"
+msgstr "Je ne aime pas cet article"
+
+#: View/Articles/view.ctp:191 View/Comments/add.ctp:16
+msgid "Post my Comment"
+msgstr "Postez mon Commentaire"
+
+#: View/Categories/add.ctp:47 View/Categories/edit.ctp:3
 msgid "Add Category"
 msgstr "Ajouter une catégorie"
 
-#: View/Categories/add.ctp:37
+#: View/Categories/add.ctp:51 View/Categories/edit.ctp:14
 msgid "description"
+msgstr "la description"
+
+#: View/Categories/index.ctp:48
+msgid ""
+"<span class=\"glyphicon glyphicon-pencil\" style=\"font-size: 18px; color:"
+"color:black;\"> </span>"
 msgstr ""
 
-#: View/Categories/index.ctp:37 View/Categories/view.ctp:43
-#: View/Users/users_article.ctp:39 View/Users/users_category.ctp:39
+#: View/Categories/index.ctp:52 View/Categories/view.ctp:60
+#: View/Users/users_article.ctp:57 View/Users/users_category.ctp:56
 msgid "Are you sure you want to delete this User?"
 msgstr "Êtes-vous sûr de vouloir supprimer cet utilisateur?"
-
-#: View/Comments/add.ctp:17
-msgid "Post my Comment"
-msgstr "Postez mon Commentaire"
 
 #: View/Comments/edit.ctp:4
 msgid "Edit Comment"
 msgstr "Révisez le Commentaire"
 
-#: View/Comments/edit.ctp:13 View/Contacts/edit.ctp:12 View/Users/login.ctp:19
+#: View/Comments/edit.ctp:13 View/Contacts/edit.ctp:12 View/Users/login.ctp:25
 msgid "Submit"
 msgstr "Proposer"
 
 #: View/Comments/edit.ctp:16 View/Contacts/edit.ctp:15
 #: View/Contacts/index.ctp:12;48 View/Contacts/view.ctp:37
-#: View/Users/index.ctp:16
 msgid "Actions"
 msgstr ""
 
 #: View/Comments/edit.ctp:19 View/Contacts/edit.ctp:18
-#: View/Contacts/index.ctp:27 View/Users/index.ctp:36
+#: View/Contacts/index.ctp:27
 msgid "Delete"
 msgstr ""
 
@@ -285,20 +663,17 @@ msgstr ""
 msgid "New User"
 msgstr ""
 
-#: View/Comments/index.ctp:9 View/Comments/view.ctp:7
-#: View/Elements/add_comment.ctp:6
-msgid "says"
-msgstr "dit"
-
-#: View/Contacts/add.ctp:6
+#: View/Contacts/add.ctp:84 View/Elements/footer_element.ctp:10
+#: View/Elements/footer_element_2.ctp:10 View/Elements/user_footer.ctp:10
 msgid "Contact Us"
 msgstr "Contactez-nous"
 
-#: View/Contacts/add.ctp:7
+#: View/Contacts/add.ctp:85
 msgid "Send your message with us."
 msgstr "Envoyez votre message avec nous."
 
-#: View/Contacts/add.ctp:18
+#: View/Contacts/add.ctp:94 View/Elements/footer_element.ctp:21
+#: View/Elements/footer_element_2.ctp:20 View/Elements/user_footer.ctp:20
 msgid "Send"
 msgstr "Envoyer"
 
@@ -312,17 +687,17 @@ msgstr ""
 
 #: View/Contacts/index.ctp:2
 msgid "Contacts"
-msgstr ""
+msgstr "Contacts"
 
-#: View/Contacts/index.ctp:25 View/Users/index.ctp:32
+#: View/Contacts/index.ctp:25
 msgid "View"
 msgstr ""
 
-#: View/Contacts/index.ctp:26 View/Users/index.ctp:34
+#: View/Contacts/index.ctp:26
 msgid "Edit"
 msgstr ""
 
-#: View/Contacts/index.ctp:36 View/Users/index.ctp:45
+#: View/Contacts/index.ctp:36
 msgid ""
 "Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
 "starting on record {:start}, ending on {:end}"
@@ -332,11 +707,7 @@ msgstr ""
 msgid "New Contact"
 msgstr ""
 
-#: View/Contacts/view.ctp:2 View/Layouts/default.ctp:102
-msgid "Contact"
-msgstr "Contactez"
-
-#: View/Contacts/view.ctp:4 View/Users/profile.ctp:35;68
+#: View/Contacts/view.ctp:4 View/Users/profile.ctp:52;86
 msgid "Id"
 msgstr ""
 
@@ -352,11 +723,11 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: View/Contacts/view.ctp:24 View/Users/profile.ctp:39;71
+#: View/Contacts/view.ctp:24 View/Users/profile.ctp:56;89
 msgid "Created"
 msgstr ""
 
-#: View/Contacts/view.ctp:29 View/Users/profile.ctp:40;72
+#: View/Contacts/view.ctp:29 View/Users/profile.ctp:57;90
 msgid "Modified"
 msgstr ""
 
@@ -364,299 +735,353 @@ msgstr ""
 msgid "Delete Contact"
 msgstr ""
 
-#: View/Elements/add_comment.ctp:10
-msgid "No Comments); "
+#: View/Elements/add_comment.ctp:9
+msgid "No Comments"
 msgstr "Aucun Commentaire"
 
-#: View/Elements/footer_element.ctp:9 View/Elements/footer_element_2.ctp:9
-msgid "Recent Articles"
-msgstr "Articles récents"
-
-#: View/Elements/footer_element.ctp:22 View/Elements/footer_element_2.ctp:22
+#: View/Elements/footer_element.ctp:27 View/Elements/footer_element_2.ctp:25
+#: View/Elements/user_footer.ctp:25
 msgid "About the Blog"
 msgstr "A propos du Blog"
 
-#: View/Elements/footer_element.ctp:25
+#: View/Elements/footer_element.ctp:30 View/Elements/footer_element_2.ctp:28
+#: View/Elements/user_footer.ctp:28
 msgid ""
-"A blog (a truncation of the expression weblog)[1] is a discussion or "
+"A blog (a truncation of the expression weblog) is a discussion or "
 "informational site published on the World Wide Web consisting of discrete "
-"entries (\"posts\") typically displayed in reverse chronological order (the "
-"most recent post appears first. <br/>\n"
-"                   The emergence and growth of blogs in the late 1990s "
-"coincided with the advent of web publishing tools that facilitated the "
+"entries posts typically displayed in reverse chronological order (the most "
+"recent post appears first.The emergence and growth of blogs in the late "
+"1990s coincided with the advent of web publishing tools that facilitated the "
 "posting of content by non-technical users.(Previously, a knowledge of such "
 "technologies as HTML and FTP had been required to publish content on the "
-"Web.)\n"
-"                   A majority are interactive, allowing visitors to leave "
-"comments and even message each other via GUI widgets on the blogs, and it is "
-"this interactivity that distinguishes them from other static websites. In "
-"that sense, blogging can be seen as a form of social networking service. "
-"Indeed, bloggers do not only produce content to post on their blogs, but "
-"also build social relations with their readers and other bloggers. However, "
-"there are high-readership blogs which do not allow comments, such as Daring "
-"Fireball.)."
+"Web.) A majority are interactive, allowing visitors to leave comments and "
+"even message each other via GUI widgets on the blogs, and it is this "
+"interactivity that distinguishes them from other static websites. In that "
+"sense, blogging can be seen as a form of social networking service. Indeed, "
+"bloggers do not only produce content to post on their blogs, but also build "
+"social relations with their readers and other bloggers. However, there are "
+"high-readership blogs which do not allow comments, such as Daring Fireball."
 msgstr ""
+"Un blog (une troncation de l'expression weblog) est une discussion ou le "
+"site informationnel a publié sur le Web se composant des postes d'entrées "
+"séparés d'une manière caractéristique affichés par l'ordre chronologique "
+"contraire (le poste le plus récent semble premier. L'émersion et la "
+"croissance de blogs vers la fin des années 1990 ont coïncidé avec la venue "
+"d'instruments de publication de web qui ont facilité le fait de poster de "
+"contenu par les utilisateurs non-techniques. (Auparavant, une connaissance "
+"de telles technologies comme HTML et FTP avait été tenue de publier le "
+"contenu sur le Web.) Une majorité est interactive, en permettant aux "
+"visiteurs de quitter des commentaires et même le message l'un l'autre via "
+"les bidules GUI sur le blogs et c'est cette interactivité qui les distingue "
+"d'autres sites Internet statiques. Dans ce sens, blogging peut être vu comme "
+"une forme de service networking social. Effectivement, bloggers produisent "
+"non seulement le contenu pour voyager par la poste sur leur blogs, mais "
+"construire aussi des relations sociales avec leurs lecteurs et d'autre "
+"bloggers. Pourtant, il y a le haut nombre de lecteurs blogs qui ne "
+"permettent pas"
 
-#: View/Elements/footer_element.ctp:33 View/Elements/footer_element_2.ctp:33
-#: View/Elements/search_sidebar.ctp:22 View/Elements/side_bar.ctp:21
-#: View/Elements/side_bar_search.ctp:22 View/Elements/side_bar_search_2.ctp:19
-#: View/Layouts/default.ctp:98
+#: View/Elements/footer_element.ctp:36 View/Elements/footer_element_2.ctp:34
+#: View/Elements/search_sidebar.ctp:25 View/Elements/side_bar.ctp:57
+#: View/Elements/side_bar_search.ctp:55 View/Elements/side_bar_search_2.ctp:24
+#: View/Elements/user_searchbar.ctp:53
 msgid "Random Articles"
 msgstr "articles aléatoires"
 
-#: View/Elements/footer_element_2.ctp:25
-msgid ""
-"A blog (a truncation of the expression weblog)[1] is a discussion or "
-"informational site published on the World Wide Web consisting of discrete "
-"entries (\"posts\") typically displayed in reverse chronological order (the "
-"most recent post appears first. <br/>\n"
-"                   The emergence and growth of blogs in the late 1990s "
-"coincided with the advent of web publishing tools that facilitated the "
-"posting of content by non-technical users.(Previously, a knowledge of such "
-"technologies as HTML and FTP had been required to publish content on the "
-"Web.)\n"
-"                    majority are interactive, allowing visitors to leave "
-"comments and even message each other via GUI widgets on the blogs, and it is "
-"this interactivity that distinguishes them from other static websites. In "
-"that sense, blogging can be seen as a form of social networking service. "
-"Indeed, bloggers do not only produce content to post on their blogs, but "
-"also build social relations with their readers and other bloggers. However, "
-"there are high-readership blogs which do not allow comments, such as Daring "
-"Fireball.)."
+#: View/Elements/footer_element.ctp:47 View/Elements/footer_element_2.ctp:47
+#: View/Elements/user_footer.ctp:44
+msgid "Connect with Us."
+msgstr "Connecte-toi avec nous."
+
+#: View/Elements/footer_element.ctp:50 View/Elements/footer_element_2.ctp:50
+#: View/Elements/user_footer.ctp:47
+msgid "Like us on Facebook"
+msgstr "Aimez-nous sur facebook"
+
+#: View/Elements/footer_element.ctp:51 View/Elements/footer_element_2.ctp:51
+#: View/Elements/user_footer.ctp:48
+msgid "<span class=\"fa fa-facebook-official\"></span>"
 msgstr ""
 
-#: View/Elements/search_sidebar.ctp:4 View/Elements/side_bar.ctp:4
-#: View/Elements/side_bar_search.ctp:4 View/Elements/side_bar_search_2.ctp:2
-msgid "Archives"
-msgstr "Archives"
+#: View/Elements/footer_element.ctp:53 View/Elements/footer_element_2.ctp:53
+#: View/Elements/user_footer.ctp:50
+msgid "Add us on Circle"
+msgstr "Ajoutez-nous sur Cercle"
 
-#: View/Elements/search_sidebar.ctp:6 View/Elements/side_bar.ctp:6
-#: View/Elements/side_bar_search.ctp:6 View/Elements/side_bar_search_2.ctp:4
+#: View/Elements/footer_element.ctp:54 View/Elements/footer_element_2.ctp:54
+#: View/Elements/user_footer.ctp:51
+msgid "<span class=\"fa fa-google-plus\"></span>"
+msgstr ""
+
+#: View/Elements/footer_element.ctp:56 View/Elements/footer_element_2.ctp:56
+#: View/Elements/user_footer.ctp:53
+msgid "Download and Contribute to Us."
+msgstr "Télécharger et contribuer à nous."
+
+#: View/Elements/footer_element.ctp:57
+msgid ""
+"<span class=\" fa fa-github-square\"> \n"
+"                       </span>"
+msgstr ""
+
+#: View/Elements/footer_element.ctp:59 View/Elements/footer_element_2.ctp:59
+#: View/Elements/user_footer.ctp:56
+msgid "Pin us."
+msgstr "Pin nous."
+
+#: View/Elements/footer_element.ctp:60 View/Elements/footer_element_2.ctp:60
+#: View/Elements/user_footer.ctp:57
+msgid "<span class=\"fa fa-pinterest\"></span>"
+msgstr ""
+
+#: View/Elements/footer_element.ctp:62 View/Elements/footer_element_2.ctp:62
+#: View/Elements/user_footer.ctp:59
+msgid "Share your article with Reddit"
+msgstr "Partagez votre article avec Reddit"
+
+#: View/Elements/footer_element.ctp:63 View/Elements/footer_element_2.ctp:63
+#: View/Elements/user_footer.ctp:60
+msgid "<span class=\"fa fa-reddit\"></span>"
+msgstr ""
+
+#: View/Elements/footer_element.ctp:65 View/Elements/footer_element_2.ctp:65
+#: View/Elements/user_footer.ctp:62
+msgid "Tweet and Tweet us."
+msgstr "Tweet et nous Tweet."
+
+#: View/Elements/footer_element.ctp:66 View/Elements/footer_element_2.ctp:66
+#: View/Elements/user_footer.ctp:63
+msgid "<span class=\"fa fa-twitter\"></span>"
+msgstr ""
+
+#: View/Elements/footer_element_2.ctp:57 View/Elements/user_footer.ctp:54
+msgid ""
+"<span class=\" fa fa-github-square\"> \n"
+"                    </span>"
+msgstr ""
+
+#: View/Elements/search_sidebar.ctp:7 View/Elements/side_bar.ctp:36
+#: View/Elements/side_bar_search.ctp:36 View/Elements/side_bar_search_2.ctp:5
+#: View/Elements/user_searchbar.ctp:34
 msgid "March 2016"
 msgstr "Mars de 2016"
 
-#: View/Elements/search_sidebar.ctp:8 View/Elements/side_bar.ctp:8
-#: View/Elements/side_bar_search.ctp:8 View/Elements/side_bar_search_2.ctp:6
+#: View/Elements/search_sidebar.ctp:9 View/Elements/side_bar.ctp:38
+#: View/Elements/side_bar_search.ctp:38 View/Elements/side_bar_search_2.ctp:7
+#: View/Elements/user_searchbar.ctp:36
 msgid "February 2016"
 msgstr "Février de 2016"
 
-#: View/Elements/search_sidebar.ctp:11 View/Elements/side_bar.ctp:10
-#: View/Elements/side_bar_search.ctp:11 View/Elements/side_bar_search_2.ctp:8
+#: View/Elements/search_sidebar.ctp:11 View/Elements/side_bar.ctp:40
+#: View/Elements/side_bar_search.ctp:41 View/Elements/side_bar_search_2.ctp:9
+#: View/Elements/user_searchbar.ctp:39
 msgid "January 2016"
 msgstr "Janvier de 2016"
 
-#: View/Elements/search_sidebar.ctp:13 View/Elements/side_bar.ctp:12
-#: View/Elements/side_bar_search.ctp:13 View/Elements/side_bar_search_2.ctp:10
-msgid "December 2016"
-msgstr "Décembre de 2016"
+#: View/Elements/search_sidebar.ctp:13 View/Elements/side_bar.ctp:42
+#: View/Elements/side_bar_search.ctp:43 View/Elements/side_bar_search_2.ctp:11
+#: View/Elements/user_searchbar.ctp:41
+msgid "December 2015"
+msgstr "Décembre de 2015"
 
-#: View/Elements/search_sidebar.ctp:18 View/Elements/side_bar.ctp:17
-#: View/Elements/side_bar_search.ctp:18 View/Layouts/default.ctp:94
+#: View/Elements/search_sidebar.ctp:19 View/Elements/side_bar.ctp:48
+#: View/Elements/side_bar_search.ctp:49 View/Elements/user_searchbar.ctp:47
 msgid "Category"
 msgstr "Catégorie"
 
-#: View/Elements/search_sidebar.ctp:20 View/Elements/side_bar.ctp:19
-#: View/Elements/side_bar_search.ctp:20 View/Elements/side_bar_search_2.ctp:17
-#: View/Layouts/default.ctp:96
-msgid "Technology"
-msgstr "La technologie"
-
-#: View/Elements/search_sidebar.ctp:21 View/Elements/side_bar.ctp:20
-#: View/Elements/side_bar_search.ctp:21 View/Elements/side_bar_search_2.ctp:18
-#: View/Layouts/default.ctp:97
+#: View/Elements/search_sidebar.ctp:23 View/Elements/side_bar.ctp:53
+#: View/Elements/side_bar_search.ctp:53 View/Elements/side_bar_search_2.ctp:20
+#: View/Elements/user_searchbar.ctp:51
 msgid "Science and Health"
 msgstr "Science et Santé"
 
-#: View/Elements/search_sidebar.ctp:26 View/Elements/side_bar.ctp:25
-#: View/Elements/side_bar_search.ctp:26
+#: View/Elements/search_sidebar.ctp:30 View/Elements/side_bar.ctp:63
+#: View/Elements/side_bar_search.ctp:60
 msgid "Popular Articles"
 msgstr "Articles populaires"
 
-#: View/Elements/search_sidebar.ctp:41 View/Elements/side_bar_search.ctp:39
-#: View/Elements/side_bar_search_2.ctp:35
+#: View/Elements/search_sidebar.ctp:48 View/Elements/side_bar_search.ctp:77
+#: View/Elements/side_bar_search_2.ctp:41
 msgid "Article Comments"
 msgstr "Article Commentaires"
 
+#: View/Elements/search_sidebar.ctp:56 View/Elements/side_bar.ctp:74
+#: View/Elements/side_bar_search.ctp:85
+msgid "Topics"
+msgstr "Thèmes"
+
+#: View/Elements/side_bar.ctp:3 View/Elements/side_bar_search.ctp:3
+#: View/Elements/user_searchbar.ctp:3
+msgid "Ads"
+msgstr "Annonces"
+
+#: View/Elements/user_footer.ctp:34
+msgid "Active Users"
+msgstr "utilisateurs actifs"
+
 #: View/Emails/text/account_verification.ctp:3
 msgid "Hello %s,"
-msgstr ""
+msgstr "Bonjour %s,"
 
-#: View/Layouts/default.ctp:42
-msgid "<span class=\"fa fa-facebook\"> </span>"
-msgstr ""
-
-#: View/Layouts/default.ctp:43
-msgid "<span class=\"fa fa-pinterest-p\"> </span>"
-msgstr ""
-
-#: View/Layouts/default.ctp:44
-msgid "<span class=\"fa fa-tumblr\"> </span>"
-msgstr ""
-
-#: View/Layouts/default.ctp:46
-msgid "<span class=\"fa fa-twitter\"> </span>"
-msgstr ""
-
-#: View/Layouts/default.ctp:62
-msgid "Profile"
-msgstr "Profil"
-
-#: View/Layouts/default.ctp:64
-msgid "Logout"
-msgstr "Se déconnecter"
-
-#: View/Layouts/default.ctp:64
-msgid "Are you sure you want to logout?"
-msgstr "Êtes-vous sûr de vouloir vous déconnecter?"
-
-#: View/Layouts/default.ctp:68
-msgid "Sign in"
-msgstr "Signer le registre"
-
-#: View/Layouts/default.ctp:70
-msgid "Sign up"
-msgstr "Signer le registre"
-
-#: View/Layouts/default.ctp:79
+#: View/Layouts/default.ctp:24
 msgid "BLOGAPP"
-msgstr "Inscrire"
+msgstr "BLOGAPP"
 
-#: View/Layouts/default.ctp:80
+#: View/Layouts/default.ctp:25
 msgid ""
-"A blog (a truncation of the expression weblogis a discussion or "
-"informational site published on the World Wide Web."
+"A blog (a truncation of the expression weblog a discussion or informational "
+"site published on the World Wide Web."
 msgstr ""
-"Un blog (une troncation de l'expression weblogis une discussion ou un site "
+"Un blog une troncation de l'expression weblog une discussion ou un site "
 "informationnel publié sur le Web."
 
-#: View/Layouts/default.ctp:92
-msgid "Home"
-msgstr "Accueil"
-
-#: View/Layouts/default.ctp:101
-msgid "About"
-msgstr "sur"
-
-#: View/Users/add.ctp:34
-msgid "Previous"
-msgstr "Précédent"
-
-#: View/Users/add.ctp:38
-msgid "Next"
-msgstr "Ensuite"
-
-#: View/Users/add.ctp:43
-msgid "Create your Account"
-msgstr "Créez votre Compte"
-
-#: View/Users/add.ctp:44
-msgid "Create your Article Now,."
-msgstr "Créez votre Article Maintenant."
-
-#: View/Users/add.ctp:47 View/Users/login.ctp:10
-#: View/Users/request_password_change.ctp:12
-msgid "email"
-msgstr ""
-
-#: View/Users/add.ctp:49 View/Users/login.ctp:16
-msgid "password"
-msgstr ""
-
-#: View/Users/add.ctp:52
-msgid "password2"
-msgstr ""
-
-#: View/Users/add.ctp:56
-msgid "firstname"
-msgstr ""
-
-#: View/Users/add.ctp:58
-msgid "lastname"
-msgstr ""
-
-#: View/Users/add.ctp:60
-msgid "address"
-msgstr ""
-
-#: View/Users/add.ctp:67
+#: View/Layouts/default.ctp:91;99 View/Users/add.ctp:45
 msgid "Sign In"
 msgstr "Signer le registre"
 
-#: View/Users/edit.ctp:31
+#: View/Users/add.ctp:5
+msgid "Your idea needs a great blog"
+msgstr "Votre idée a besoin de grand blog"
+
+#: View/Users/add.ctp:6
+msgid "Your audience is waiting, share your blog with the world."
+msgstr "Votre audience attend, partager votre blog avec le monde."
+
+#: View/Users/add.ctp:9
+msgid "Join us now."
+msgstr "Rejoignez-nous maintenant"
+
+#: View/Users/add.ctp:11
+msgid "Join us now, and create your article wherever, whenever you are."
+msgstr ""
+"Rejoignez-nous maintenant et créez votre article où que, chaque fois que "
+"vous êtes."
+
+#: View/Users/add.ctp:13
+msgid "Create your Article for Free."
+msgstr "Créez votre article gratuitement."
+
+#: View/Users/add.ctp:15
+msgid "Tell something about yourself, the world and universe"
+msgstr "Dites quelque chose sur vous-même, le monde et l'univers"
+
+#: View/Users/add.ctp:16
+msgid "BlogApp world"
+msgstr "BlogApp monde"
+
+#: View/Users/add.ctp:17
+msgid "Read, Write, Comment, Like, and Unlike different Article"
+msgstr "Lire, écrire, Commentaire, Like, et Contrairement à différents article"
+
+#: View/Users/add.ctp:21
+msgid "Create your Account"
+msgstr "Créez votre Compte"
+
+#: View/Users/add.ctp:22
+msgid "Create your Article Now,."
+msgstr "Créez votre Article Maintenant."
+
+#: View/Users/add.ctp:27 View/Users/login.ctp:18
+#: View/Users/request_password_change.ctp:10
+msgid "email"
+msgstr ""
+
+#: View/Users/add.ctp:29 View/Users/login.ctp:20
+msgid "password"
+msgstr ""
+
+#: View/Users/add.ctp:32
+msgid "password2"
+msgstr ""
+
+#: View/Users/add.ctp:34
+msgid "firstname"
+msgstr ""
+
+#: View/Users/add.ctp:36
+msgid "lastname"
+msgstr ""
+
+#: View/Users/add.ctp:38
+msgid "address"
+msgstr ""
+
+#: View/Users/edit.ctp:48
 msgid "Hi, this is your information you can edit or modify your profile."
 msgstr ""
 "Salut, c'est vos informations vous pouvez réviser ou modifier votre profil."
 
-#: View/Users/edit.ctp:50
+#: View/Users/edit.ctp:61
 msgid "Update my Profile"
 msgstr "Actualisez mon Profil"
 
-#: View/Users/index.ctp:2 View/Users/login.ctp:9
-#: View/Users/request_password_change.ctp:11 View/Users/view.ctp:31
-msgid "User"
-msgstr ""
-
-#: View/Users/index.ctp:31
-msgid "Add"
-msgstr ""
-
-#: View/Users/index.ctp:37
-msgid "Are you sure you want to delete id number %s?"
-msgstr "Etes-vous sûr de vouloir supprimer le numéro identifiant% s?"
+#: View/Users/index.ctp:46
+msgid "People who joined us."
+msgstr "Les gens qui nous ont rejoints."
 
 #: View/Users/login.ctp:6
+msgid ""
+"<span class=\"glyphicon glyphicon-home\" \n"
+"                style=\" font-size: 18px; color:gray;\"> </span>"
+msgstr ""
+
+#: View/Users/login.ctp:12
 msgid "BlogApp"
 msgstr ""
 
-#: View/Users/login.ctp:7
+#: View/Users/login.ctp:13
 msgid "Share your ideas with everyone.);"
 msgstr "Partagez vos idées avec chacun."
 
-#: View/Users/login.ctp:13
-msgid "Forgot password"
-msgstr "Etes-vous sûr de vouloir supprimer le numéro identifiant% s?"
-
-#: View/Users/profile.ctp:36;69
-msgid "Title"
+#: View/Users/login.ctp:17 View/Users/request_password_change.ctp:9
+#: View/Users/view.ctp:47
+msgid "User"
 msgstr ""
 
-#: View/Users/profile.ctp:37
+#: View/Users/login.ctp:29
+msgid "Forgot password"
+msgstr "Mot de passe oublié"
+
+#: View/Users/profile.ctp:53;87
+msgid "Title"
+msgstr "Titre"
+
+#: View/Users/profile.ctp:54
 msgid "Status"
 msgstr "statut"
 
-#: View/Users/profile.ctp:38
+#: View/Users/profile.ctp:55
 msgid "Genre"
 msgstr "Genre"
 
-#: View/Users/profile.ctp:41
+#: View/Users/profile.ctp:58
 msgid "Like"
-msgstr ""
+msgstr "Comme"
 
-#: View/Users/profile.ctp:42
+#: View/Users/profile.ctp:59
 msgid "Unlike"
-msgstr ""
+msgstr "À la différence"
 
-#: View/Users/profile.ctp:61
+#: View/Users/profile.ctp:79
 msgid "No recent articles"
 msgstr "Aucun article récent"
 
-#: View/Users/profile.ctp:63
+#: View/Users/profile.ctp:81
 msgid "My Category"
 msgstr "Ma catégorie"
 
-#: View/Users/profile.ctp:70
+#: View/Users/profile.ctp:88
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
-#: View/Users/profile.ctp:87
+#: View/Users/profile.ctp:106
 msgid "No recent category"
-msgstr ""
+msgstr "Aucune catégorie récente"
+
+#: View/Users/request_password_change.ctp:6
+msgid "Forgot your password?"
+msgstr "A oublié votre mot de passe ?"
 
 #: View/Users/request_password_change.ctp:7
-msgid "Forgot your password?"
-msgstr ""
-
-#: View/Users/request_password_change.ctp:8
 #: View/Users/resend_verification.ctp:8
 msgid ""
 "Please enter the email you used for registration and you'll get an email "
@@ -665,13 +1090,17 @@ msgstr ""
 "S'il vous plaît entrer l'e-mail que vous avez utilisé pour l'enregistrement "
 "et vous recevrez un email avec des instructions supplémentaires."
 
+#: View/Users/request_password_change.ctp:12
+msgid "Send my New password"
+msgstr "Envoyez mon Nouveau mot de passe"
+
 #: View/Users/resend_verification.ctp:7
 msgid "Resend the Email Verification"
 msgstr "Renvoyer l'email de vérification"
 
-#: View/Users/reset.ctp:7
+#: View/Users/reset.ctp:6
 msgid "Reset your password"
-msgstr ""
+msgstr "Reconstruction votre mot de passe"
 
 #: Model/Article.php:validation for field title
 msgid "give it a try"
@@ -685,7 +1114,7 @@ msgstr "Dire ce qui est votre titre tout au sujet, Dont le laisser vide."
 #: model;validation Model/Comment.php:validation id
 #: Model/Contact.php:validation message
 msgid "notBlank"
-msgstr ""
+msgstr "notBlank"
 
 #: Model/ArticleI18n.php:validation for field foreign_key
 #: Model/Category.php:validation user_id Model/Like.php:validation
@@ -748,6 +1177,37 @@ msgstr "Les mots de passe que vous avez entrés ne correspondent pas."
 #: Model/User.php:validation for field firstname;validation lastname
 msgid "This field cannot be left blank."
 msgstr "Les mots de passe que vous avez entrés ne correspondent pas."
+
+#~ msgid "Previous"
+#~ msgstr "Précédent"
+
+#~ msgid "Next"
+#~ msgstr "Ensuite"
+
+#~ msgid "Comment"
+#~ msgstr "Commentaire"
+
+#~ msgid "Are you sure you want to delete id number %s?"
+#~ msgstr "Etes-vous sûr de vouloir supprimer le numéro identifiant% s?"
+
+#~ msgid "Related Articles"
+#~ msgstr "Articles Liés"
+
+#~ msgid "Search Result:"
+#~ msgstr "Fouillez le Résultat :"
+
+#~ msgid "No Comments); "
+#~ msgstr "Aucun Commentaire"
+
+#~ msgid "December 2016"
+#~ msgstr "Décembre de 2016"
+
+#~ msgid ""
+#~ "A blog (a truncation of the expression weblogis a discussion or "
+#~ "informational site published on the World Wide Web."
+#~ msgstr ""
+#~ "Un blog (une troncation de l'expression weblogis une discussion ou un "
+#~ "site informationnel publié sur le Web."
 
 #~ msgid "Modify Article"
 #~ msgstr "modifier l'article"

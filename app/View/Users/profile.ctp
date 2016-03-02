@@ -15,22 +15,39 @@
                          &nbsp;
                      </div>
                   </div>
-               </div>
+                </div>
             </li>&nbsp; <hr>
-            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:#00BFFF;"> &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:#00BFFF; text-decoration:none;">
-                <?php  echo $this->Html->link(__('Change Password'), array( 'controller' => 'users', 'action' => 'reset')); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:#00BFFF;">&nbsp;
-              <?php  echo $this->Html->link(__('My Articles'),array( 'controller' => 'users','action' => 'users_article',AuthComponent::user('id'))); ?></span></li>&nbsp;
-            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:#00BFFF;">&nbsp;
-               <?php  echo $this->Html->link(__('My Genre'),array( 'controller' => 'users','action' => 'users_category',AuthComponent::user('id'))); ?></span></li>
-         </ul>
+              <h4 style="text-align:left; font-size: 18px;"><?php echo __('My Activities'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('My Profile'), array('controller'=>
+                 'users','action' => 'edit', AuthComponent::user('id')))?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-cog" style="font-size: 20px; color:black; 
+                text-decoration:none;">&nbsp;<?php  echo $this->Html->link(__('Change Password')
+                ,array('controller' =>'users','action' => 'reset')); ?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-list-alt" style="font-size: 20px; color:black;">&nbsp; 
+                <?php  echo $this->Html->link(__('My Articles'),array( 'controller' => 'users','action' => 'users_article',AuthComponent::user('id'))); ?></span></li>&nbsp;
+            <li><span class="glyphicon glyphicon-list" style="font-size: 20px; color:black;">
+                 &nbsp;<?php  echo $this->Html->link(__('My Genre'),array( 'controller' => 
+                 'users','action' => 'users_category',AuthComponent::user('id'))); ?></span></li>  &nbsp;&nbsp;&nbsp;
+            <h4 style="text-align:left; font-size: 18px;"><?php echo __('Visit other Author'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-user" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('View all User'), array('controller'=>
+                 'users','action' => 'index'))?></span></li>&nbsp; 
+            <h4 style="text-align:left; font-size: 18px;"><?php echo __('Visit other Article'); ?></h4>&nbsp;
+            <li><span class="glyphicon glyphicon-edit" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('Back to Articles'), array('controller'=>
+                 'articles','action' => 'index'))?></span></li>&nbsp;      
+            <li><span class="glyphicon glyphicon-home" style="font-size: 20px; color:black;">
+                 &nbsp;<?php echo $this->Html->link(__('Back to Home'), array('controller'=>
+                 'articles','action' => 'home'))?></span></li>&nbsp; 
+          </ul>
       </div>
       <div class="col-sm-9 col-md-7">
-        <h2 class="topic"><?php echo __('My Articles'); ?></h2>
+        <h2 class="topic" style="color: black;"><?php echo __('My Articles'); ?></h2>
          <?php if (!empty($user['Article'])): ?>
             <table class="table table-striped">
               <thead>
+                
                 <tr>
                   <th><?php echo __('Id'); ?></th>
                   <th><?php echo __('Title'); ?></th>
@@ -44,6 +61,7 @@
             </thead>
             <tbody>
                <?php foreach ($user['Article'] as $article): ?>
+
                <tr>
                   <td><?php echo $article['id']; ?></td>
                   <td><?php echo $article['title']; ?></td>
@@ -55,12 +73,12 @@
                   <td><?php echo $article['dislike_num']; ?></td> 
               </tr>
             </tbody>
-               <?php endforeach; ?>
-          </table>
-            <?php else: ?>
-               <?php echo (__("No recent articles"));?>
-            <?php endif; ?>
-      <h2><?php echo __('My Category'); ?></h2>
+          <?php endforeach; ?>
+        </table>
+          <?php else: ?>
+              <?php echo (__("No recent articles"));?>
+          <?php endif; ?>
+      <h2 style="color: black;"><?php echo __('My Category'); ?></h2>
         <?php if (!empty($user['Category'])): ?>
           <table class="table table-striped">
             <thead>
@@ -82,19 +100,18 @@
              </tr>
         </tbody>
         <?php endforeach; ?>
+
        </table>
         <?php else: ?>
         <?php echo (__("No recent category"));?>
         <?php endif; ?>
+
     </div>
  </div>
 </div>
- <!-- <div class="jumbotron" style="background-color:black; border: none; ">
-       <?php //echo $this->element('footer_element_2');?>
-  </div> -->
-  <div class="jumbotron" style="background-color:white; border: none; height: 10cm;">
+<div class="jumbotron" style="background-color:white; border: none; height: 10cm;">
 </div>
-  <div class="footer" id="footer" style="text-align:center;">
-      <p> <?php __('@2060 BlogApp.Inc'); ?> </p> 
-     <a href="#home" class="paginate"><?php echo __('Back to Top')?></a>
-  </div>
+<div class="footer" id="footer" style="text-align:center;">
+    <p> <?php __('@2060 BlogApp.Inc'); ?> </p> 
+    <a href="#home" class="paginate"><?php echo __('Back to Top')?></a>
+</div>

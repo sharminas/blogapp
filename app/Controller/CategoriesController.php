@@ -36,28 +36,26 @@ class CategoriesController extends AppController {
 			$this->request->data['Category']['user_id'] = $this->Auth->user('id');
 			$this->Category->create();
 			if ($this->Category->save($this->request->data)) {
-				$this->Session->setFlash('The category has been saved.','success');
-				return $this->redirect(array('action' => 'index'));
+				$this->Session->setFlash((__'The category has been saved.'),'success');
+				return $this->redirect(array('action' => 'articles/index'));
 			}else{
-				$this->Session->setFlash('The category could not be saved. Please, try again.','error2');
+				$this->Session->setFlash(__('The category could not be saved. Please, try again.'),'error2');
 			}
 		}
 		$users = $this->Category->User->find('list');
 		$this->set(compact('users'));
 	}
 	public function edit($id = null){
-         
-
 		if (!$this->Category->exists($id)) {
 			throw new NotFoundException(__('Invalid category'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Category->save($this->request->data)) {
-				$this->Session->setFlash('The category has been saved.','success');
+				$this->Session->setFlash(__('The category has been saved.'),'success');
 				return $this->redirect(array('action' => 'index'));
 			} 
 			else {
-				$this->Session->setFlash('The category could not be saved. Please, try again.','error2');
+				$this->Session->setFlash(__('The category could not be saved. Please, try again.'),'error2');
 			}
 		} 
 		else {
@@ -74,10 +72,10 @@ class CategoriesController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Category->delete()) {
-			$this->Session->setFlash('The category has been deleted.','success');
+			$this->Session->setFlash(__('The category has been deleted.'),'success');
 		} 
 		else {
-			$this->Session->setFlash('The category could not be deleted. Please, try again.','error2');
+			$this->Session->setFlash(__('The category could not be deleted. Please, try again.'),'error2');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

@@ -33,7 +33,7 @@ class UsersController extends AppController {
 		if (Configure::read('Users.disableDefaultAuth') === true) {
 			return;
 		}
-		$this->Auth->allow('add','reset', 'verify', 'logout', 'reset_password', 'login', 'resend_verification');
+		$this->Auth->allow('search','add','reset', 'verify', 'logout', 'reset_password', 'login', 'resend_verification');
 		if (!is_null(Configure::read('Users.allowRegistration')) && !Configure::read('Users.allowRegistration')) {
 			$this->Auth->deny('add');
 		}
@@ -95,7 +95,7 @@ class UsersController extends AppController {
 				if ($this->here == $this->Auth->loginRedirect) {
 					$this->Auth->loginRedirect = '/';
 				}
-				$this->Session->setFlash('You have successfully logged in','success');
+				$this->Session->setFlash(__('You have successfully logged in'),'success');
 				if (!empty($this->request->data)) {
 					$data = $this->request->data[$this->modelClass];
 					if (empty($this->request->data[$this->modelClass]['remember_me'])) {
@@ -114,7 +114,7 @@ class UsersController extends AppController {
 					$this->redirect($this->Auth->redirect($data[$this->modelClass]['return_to']));
 				}
 			} else {
-				$this->Session->setFlash('Invalid e-mail / password combination. Please try again','error');
+				$this->Session->setFlash(__('Invalid e-mail / password combination. Please try again'),'error');
 			}
 		}
 		if (isset($this->request->params['named']['return_to'])) {
@@ -133,20 +133,20 @@ class UsersController extends AppController {
 	public function view($id = null) {
 		$this->User->id = $id;
 		if (!$this->User->exists($id)) {
-			 throw new NotFoundException(__('This User is not existing'));
+			 throw new NotFoundException(__('This User is not existing'),'error3');
 		}
 	    $this->set('user', $this->User->read());
 	}
 	public function profile($id = null) {
 		$this->User->id = $id;
 		if (!$this->User->exists($id)) {
-			 throw new NotFoundException(__('This User is not existing'));
+			 throw new NotFoundException(__('This User is not existing'),'error3');
 		}
 	    $this->set('user', $this->User->read());
 	}
 	public function add() {
  		if ($this->Auth->user()) {
-			$this->Session->setFlash(__('You are already registered and logged in!','success'));
+			$this->Session->setFlash(__('You are already registered and logged in!'),'success');
 			$this->redirect('/');
 		}
 		if (!empty($this->request->data)) {
@@ -161,29 +161,30 @@ class UsersController extends AppController {
 				);
 				$this->getEventManager()->dispatch($Event);
 				if ($Event->isStopped()) {
-					$this->redirect(array('action' => 'login'));
+					$this->redirect(array('action' => 'articles/home'));
 				}
 
 				$this->_sendVerificationEmail($this->{$this->modelClass}->data);
-				$this->Session->setFlash('Your account has been created. You should receive an e-mail shortly to authenticate your account. Once validated you will be able to login.','success');
+				$this->Session->setFlash(__('Your account has been created. You should receive an e-mail shortly to authenticate your account. Once validated you will be able to login.'),'success');
 				$this->redirect(array('action' => 'login'));
 			} else {
 				unset($this->request->data[$this->modelClass]['password']);
 				unset($this->request->data[$this->modelClass]['password2']);
-				$this->Session->setFlash('Your account could not be created. Please, try again.','error');
+				$this->Session->setFlash(__('Your account could not be created. Please, try again.'),'error3');
 			}
 		}
 	}
 	public function edit($id = null) {
 		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('This User is not existing'));
+			throw new NotFoundException(__('This User is not existing'),'error3');
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash('Your profile has been saved. Login again','success');
+				$this->Session->setFlash(__('Your profile has been saved. Login again'),'success');
 				return $this->redirect(array('action' => 'logout'));
 			} 
-	     	else{ $this->Session->setFlash('The user could not be saved. Please, try again.','error'); }
+	     	else{ $this->Session->setFlash(__('The user could not be saved. Please, try again.'),'error3'); 
+	       }
 		} 
 		else{
 			$condition = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -197,10 +198,10 @@ class UsersController extends AppController {
 			}
 			$this->request->allowMethod('post', 'delete');
 			if ($this->User->delete()) {
-			    $this->Session->setFlash('The user has been deleted.','success');
+			    $this->Session->setFlash(__('The user has been deleted.'),'success');
 			} 
 			else {
-				$this->Session->setFlash('The user could not be deleted. Please, try again.','error');
+				$this->Session->setFlash(__('The user could not be deleted. Please, try again.'),'error3');
 			}
 			return $this->redirect(
 			   $this->referer(array('action' => 'index'))
@@ -238,10 +239,10 @@ class UsersController extends AppController {
 					'firstname' => $this->{$this->modelClass}->data,
 						'token' => $this->{$this->modelClass}->data[$this->modelClass]['password_token']))
 					->send();
-					$this->Session->setFlash('Email was sent to you in order to change your password.','success');
+					$this->Session->setFlash(__('Email was sent to you in order to change your password.'),'success');
 					$this->redirect('login');
 			}else {
-				$this->Session->setFlash('No user was found with that email.','error3');
+				$this->Session->setFlash(__('No user was found with that email.'),'error3');
 				$this->redirect($this->referer('/'));
 			}
 		}
@@ -250,17 +251,17 @@ class UsersController extends AppController {
 	protected function _resetPassword($token) {
 			$user = $this->{$this->modelClass}->checkPasswordToken($token);
 			if (empty($user)) {
-				$this->Session->setFlash('Invalid password reset token try again.','error');
+				$this->Session->setFlash(__('Invalid password reset token try again.'),'error3');
 				$this->redirect(array('action' => 'reset'));
 				return;
 			}
 
 			if (!empty($this->request->data) && $this->{$this->modelClass}->resetPassword(Hash::merge($user, $this->request->data))) {
 				if ($this->RememberMe->cookieIsSet()) {
-					$this->Session->setFlash( 'Password changed.','success');
+					$this->Session->setFlash(__('Password changed.'),'success');
 					$this->_setCookie();
 				} else {
-					$this->Session->setFlash( 'Password changed, you can now login with your new password.','success');
+					$this->Session->setFlash(__('Password changed, you can now login with your new password.'),'success');
 					$this->redirect('login');
 				}
 			}
@@ -294,10 +295,10 @@ class UsersController extends AppController {
 			try {
 				if ($this->{$this->modelClass}->checkEmailVerification($this->request->data)) {
 					$this->_sendVerificationEmail($this->{$this->modelClass}->data);
-					$this->Session->setFlash( 'The email was resent. Please check your inbox.','success');
+					$this->Session->setFlash(__('The email was resent. Please check your inbox.'),'success');
 					return $this->redirect('login');
 				} else {
-					$this->Session->setFlash( 'The email could not be sent.','error3');
+					$this->Session->setFlash(__('The email could not be sent.'),'error3');
 				}
 			} catch (Exception $e) {
 				$this->Session->setFlash($e->getMessage());
@@ -312,7 +313,7 @@ class UsersController extends AppController {
 
 		try {
 			$this->{$this->modelClass}->verifyEmail($token);
-			$this->Session->setFlash('Your e-mail has been validated!','success');
+			$this->Session->setFlash(__('Your e-mail has been validated!'),'success');
 			return $this->redirect(array('action' => 'login'));
 		} catch (RuntimeException $e) {
 			$this->Session->setFlash($e->getMessage());
@@ -325,15 +326,15 @@ class UsersController extends AppController {
 		}
 		$data = $this->{$this->modelClass}->verifyEmail($token);
 		if (!$data) {
-			$this->Session->setFlash( 'The url you accessed is no longer valid');
+			$this->Session->setFlash(__('The url you accessed is no longer valid'),'error3');
 			return $this->redirect('/');
 		}
 		if ($this->{$this->modelClass}->save($data, array('validate' => false))) {
 			$this->_sendNewPassword($data);
-			$this->Session->setFlash('Your password was sent to your registered email account','success');
+			$this->Session->setFlash(__('Your password was sent to your registered email account'),'success');
 			$this->redirect(array('action' => 'login'));
 		}
-		$this->Session->setFlash( 'There was an error verifying your account. Please check the email you were sent, and retry the verification link.','error');
+		$this->Session->setFlash(__('There was an error verifying your account. Please check the email you were sent, and retry the verification link.'),'error3');
 		$this->redirect('/');
 	}
 	protected function _sendNewPassword($userData) {
@@ -352,7 +353,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->request->data[$this->modelClass]['id'] = $this->Auth->user('id');
 			if ($this->{$this->modelClass}->changePassword($this->request->data)) {
-				$this->Session->setFlash( 'Password changed.');
+				$this->Session->setFlash(__('Password changed.'),'success');
 				$this->RememberMe->destroyCookie();
 				$this->redirect('/');
 			}
@@ -376,7 +377,7 @@ class UsersController extends AppController {
 	public function users_article($id= null){
 		$this->User->id = $id;
 		if (!$this->User->exists($id)) {
-			 throw new NotFoundException(__('This User is not existing'));
+			 throw new NotFoundException(__('This User is not existing'),'error3');
 		}
 	    $this->set('user', $this->User->read());
 	}
@@ -384,8 +385,12 @@ class UsersController extends AppController {
 	public function users_category($id= null){
 		$this->User->id = $id;
 		if (!$this->User->exists($id)) {
-			 throw new NotFoundException(__('This User is not existing'));
+			 throw new NotFoundException(__('This User is not existing'),'error3');
 		}
 	    $this->set('user', $this->User->read());
+	}
+	public function search(){
+	  $search_user = $this->User->find('all');  
+      $this->set('users', $search_user); 
 	}
 }

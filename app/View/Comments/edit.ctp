@@ -1,5 +1,5 @@
 <div class="comments form">
-<?php echo $this->Form->create('Comment'); ?>
+   <?php echo $this->Form->create('Comment'); ?>
 	<fieldset>
 		<legend><?php echo __('Edit Comment'); ?></legend>
 	<?php

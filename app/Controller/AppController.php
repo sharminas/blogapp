@@ -22,7 +22,10 @@ class AppController extends Controller{
        return false;
     }
     public function beforeFilter(){
-         $this->Session->write('Config.language', 'eng'); 
+         //$this->Session->write('Config.language', 'eng'); 
+       if ($this->Session->check('Config.language')) {
+            Configure::write('Config.language', $this->Session->read('Config.language'));
+        }
     }
 }
 ?>

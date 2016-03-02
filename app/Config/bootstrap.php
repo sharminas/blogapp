@@ -84,7 +84,6 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
-Configure::write('Config.language', 'eng');
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
@@ -101,4 +100,5 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 CakePlugin::load('Like', array('routes' => true));
+// CakePlugin::load('Search');
 
